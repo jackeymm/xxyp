@@ -6,26 +6,26 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel
 public class UserInfo implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
-    @ApiModelProperty(required = false,hidden=true, value = "用户Id")
+    @ApiModelProperty(required = false,hidden=false, value = "用户Id")
     private Long userId;
-    @ApiModelProperty(required = true,hidden=false, value = "用户昵称")
+    @ApiModelProperty(required = false,hidden=false, value = "用户昵称")
     private String userName;
-    @ApiModelProperty(required = true,hidden=false, value = "用户头像")
+    @ApiModelProperty(required = false,hidden=false, value = "用户头像")
     private String userImage;
-    @ApiModelProperty(required = true,hidden=false, value = "用户简介")
+    @ApiModelProperty(required = false,hidden=false, value = "用户简介")
     private String userIntroduction;
-    @ApiModelProperty(required = true,hidden=false, value = "用户身份（1约拍者，2摄影师）")
-    private Integer userIdentity;
-    @ApiModelProperty(required = true,hidden=false, value = "用户来源（1微信，2微博）")
+    @ApiModelProperty(required = false,hidden=false, value = "用户身份（1约拍者，2摄影师）")
+    private Long userIdentity;
+    @ApiModelProperty(required = false,hidden=false, value = "用户来源（1微信，2微博）")
     private Integer userSource;
-    @ApiModelProperty(required = true,hidden=false, value = "用户来源uid")
+    @ApiModelProperty(required = false,hidden=false, value = "用户来源uid")
     private Long userSourceId;
-    @ApiModelProperty(required = true,hidden=false, value = "手机号")
+    @ApiModelProperty(required = false,hidden=false, value = "手机号")
     private String mobile;
-    @ApiModelProperty(required = true,hidden=false, value = "邮箱")
+    @ApiModelProperty(required = false,hidden=false, value = "邮箱")
     private String email;
-    @ApiModelProperty(required = true,hidden=true, value = "用户状态")
-    private Integer status;
+    @ApiModelProperty(required = false,hidden=false, value = "用户状态")
+    private Integer status = 1;
 
     public Long getUserId() {
         return userId;
@@ -59,11 +59,11 @@ public class UserInfo implements java.io.Serializable {
         this.userIntroduction = userIntroduction == null ? null : userIntroduction.trim();
     }
 
-    public Integer getUserIdentity() {
+    public Long getUserIdentity() {
         return userIdentity;
     }
 
-    public void setUserIdentity(Integer userIdentity) {
+    public void setUserIdentity(Long userIdentity) {
         this.userIdentity = userIdentity;
     }
 

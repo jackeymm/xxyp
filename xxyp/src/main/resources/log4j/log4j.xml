@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-<log4j:configuration >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
     <!-- 控制台输出 -->
     <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
         <param name="Target" value="System.out" />
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern"
-                   value="[${webAppRootKey}] [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5p] [%t] %c(%M:%L) %-4r %x - %m%n" />
+                   value="[xxyp] [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5p] [%t] %c(%M:%L) %-4r %x - %m%n" />
         </layout>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">
             <param name="levelMin" value="INFO" />
@@ -18,12 +18,12 @@
     <appender name="RF" class="org.apache.log4j.RollingFileAppender">
         <param name="Append" value="true" />
         <param name="File" value="/Users/jackeymm/work/Logs/xxyp.log" />
-        <param name="MaxFileSize" value="5MB" />
+        <param name="MaxFileSize" value="50MB" />
         <param name="MaxBackupIndex" value="200" />
         <param name="BufferedIO" value="true" />
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern"
-                   value="[${webAppRootKey}] [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5p] [%t] %c(%M:%L) %-4r %x - %m%n" />
+                   value="[xxyp] [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5p] [%t] %c(%M:%L) %-4r %x - %m%n" />
         </layout>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">
             <param name="levelMin" value="INFO" />
@@ -32,7 +32,7 @@
         </filter>
     </appender>
 
-    <!-- 异步 -->
+    <!--&lt;!&ndash; 异步 &ndash;&gt;-->
     <appender name="ASYNCOUT" class="org.apache.log4j.AsyncAppender">
         <!-- 80K为一个写单元 -->
         <param name="BufferSize" value="81920" />

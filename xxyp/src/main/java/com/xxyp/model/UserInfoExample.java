@@ -385,52 +385,52 @@ public class UserInfoExample implements java.io.Serializable {
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityEqualTo(Byte value) {
+        public Criteria andUserIdentityEqualTo(Long value) {
             addCriterion("user_identity =", value, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityNotEqualTo(Byte value) {
+        public Criteria andUserIdentityNotEqualTo(Integer value) {
             addCriterion("user_identity <>", value, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityGreaterThan(Byte value) {
+        public Criteria andUserIdentityGreaterThan(Integer value) {
             addCriterion("user_identity >", value, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityGreaterThanOrEqualTo(Byte value) {
+        public Criteria andUserIdentityGreaterThanOrEqualTo(Integer value) {
             addCriterion("user_identity >=", value, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityLessThan(Byte value) {
+        public Criteria andUserIdentityLessThan(Integer value) {
             addCriterion("user_identity <", value, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityLessThanOrEqualTo(Byte value) {
+        public Criteria andUserIdentityLessThanOrEqualTo(Integer value) {
             addCriterion("user_identity <=", value, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityIn(List<Byte> values) {
+        public Criteria andUserIdentityIn(List<Integer> values) {
             addCriterion("user_identity in", values, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityNotIn(List<Byte> values) {
+        public Criteria andUserIdentityNotIn(List<Integer> values) {
             addCriterion("user_identity not in", values, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityBetween(Byte value1, Byte value2) {
+        public Criteria andUserIdentityBetween(Integer value1, Integer value2) {
             addCriterion("user_identity between", value1, value2, "userIdentity");
             return (Criteria) this;
         }
 
-        public Criteria andUserIdentityNotBetween(Byte value1, Byte value2) {
+        public Criteria andUserIdentityNotBetween(Integer value1, Integer value2) {
             addCriterion("user_identity not between", value1, value2, "userIdentity");
             return (Criteria) this;
         }
@@ -445,52 +445,52 @@ public class UserInfoExample implements java.io.Serializable {
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceEqualTo(Byte value) {
+        public Criteria andUserSourceEqualTo(Integer value) {
             addCriterion("user_source =", value, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceNotEqualTo(Byte value) {
+        public Criteria andUserSourceNotEqualTo(Integer value) {
             addCriterion("user_source <>", value, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceGreaterThan(Byte value) {
+        public Criteria andUserSourceGreaterThan(Integer value) {
             addCriterion("user_source >", value, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceGreaterThanOrEqualTo(Byte value) {
+        public Criteria andUserSourceGreaterThanOrEqualTo(Integer value) {
             addCriterion("user_source >=", value, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceLessThan(Byte value) {
+        public Criteria andUserSourceLessThan(Integer value) {
             addCriterion("user_source <", value, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceLessThanOrEqualTo(Byte value) {
+        public Criteria andUserSourceLessThanOrEqualTo(Integer value) {
             addCriterion("user_source <=", value, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceIn(List<Byte> values) {
+        public Criteria andUserSourceIn(List<Integer> values) {
             addCriterion("user_source in", values, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceNotIn(List<Byte> values) {
+        public Criteria andUserSourceNotIn(List<Integer> values) {
             addCriterion("user_source not in", values, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceBetween(Byte value1, Byte value2) {
+        public Criteria andUserSourceBetween(Integer value1, Integer value2) {
             addCriterion("user_source between", value1, value2, "userSource");
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceNotBetween(Byte value1, Byte value2) {
+        public Criteria andUserSourceNotBetween(Integer value1, Integer value2) {
             addCriterion("user_source not between", value1, value2, "userSource");
             return (Criteria) this;
         }
@@ -705,52 +705,52 @@ public class UserInfoExample implements java.io.Serializable {
             return (Criteria) this;
         }
 
-        public Criteria andStatusEqualTo(Byte value) {
+        public Criteria andStatusEqualTo(Integer value) {
             addCriterion("status =", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusNotEqualTo(Byte value) {
+        public Criteria andStatusNotEqualTo(Integer value) {
             addCriterion("status <>", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusGreaterThan(Byte value) {
+        public Criteria andStatusGreaterThan(Integer value) {
             addCriterion("status >", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusGreaterThanOrEqualTo(Byte value) {
+        public Criteria andStatusGreaterThanOrEqualTo(Integer value) {
             addCriterion("status >=", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusLessThan(Byte value) {
+        public Criteria andStatusLessThan(Integer value) {
             addCriterion("status <", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusLessThanOrEqualTo(Byte value) {
+        public Criteria andStatusLessThanOrEqualTo(Integer value) {
             addCriterion("status <=", value, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusIn(List<Byte> values) {
+        public Criteria andStatusIn(List<Integer> values) {
             addCriterion("status in", values, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusNotIn(List<Byte> values) {
+        public Criteria andStatusNotIn(List<Integer> values) {
             addCriterion("status not in", values, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusBetween(Byte value1, Byte value2) {
+        public Criteria andStatusBetween(Integer value1, Integer value2) {
             addCriterion("status between", value1, value2, "status");
             return (Criteria) this;
         }
 
-        public Criteria andStatusNotBetween(Byte value1, Byte value2) {
+        public Criteria andStatusNotBetween(Integer value1, Integer value2) {
             addCriterion("status not between", value1, value2, "status");
             return (Criteria) this;
         }

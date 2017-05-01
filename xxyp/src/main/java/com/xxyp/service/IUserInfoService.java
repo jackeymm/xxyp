@@ -20,7 +20,7 @@ public interface IUserInfoService {
 
     int insertSelective(UserInfo record);
 
-    List<UserInfo> selectByExample(UserInfoExample example);
+    List<UserInfo> selectByExample(UserInfo userInfo);
 
     UserInfo selectByPrimaryKey(Long userId);
 

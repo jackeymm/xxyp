@@ -36,7 +36,7 @@ public class SwaggerConfig {
 
         ApiInfo apiInfo = new ApiInfo(
                 "接口文档",
-                "秀秀乐派项目的接口文档，此文档包含所有接口说明。",
+                "秀秀约拍项目的接口文档，此文档包含所有接口说明。",
                 "",
                 "",
                 new Contact("jackeymm", "", "jackeymm@sina.cn"),
