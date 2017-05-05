@@ -51,8 +51,6 @@ public class UserInfoServiceImpl implements IUserInfoService {
         UserInfoExample.Criteria criteria = example.createCriteria();
         assemblyUserInfoEqual2Criteria(criteria, userInfo);
         logger.info("### example : "+GsonUtil.toJson(example));
-        List<UserInfo> list = userInfoMapper.selectByExample(example);
-        logger.info("### result List : "+GsonUtil.toJson(list));
         return userInfoMapper.selectByExample(example);
     }
 

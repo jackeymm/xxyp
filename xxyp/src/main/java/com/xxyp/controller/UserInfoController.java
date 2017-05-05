@@ -1,15 +1,16 @@
 package com.xxyp.controller;
 
-import com.xxyp.Output.UserInfoOutput;
 import com.xxyp.common.BaseController;
 import com.xxyp.common.BaseException;
+import com.xxyp.input.CreateUserInfoInput;
 import com.xxyp.model.UserInfo;
-import com.xxyp.model.UserInfoExample;
+import com.xxyp.output.UserInfoOutput;
 import com.xxyp.service.IUserInfoService;
 import com.xxyp.utils.GsonUtil;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -18,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,7 +50,10 @@ public class UserInfoController extends BaseController{
             response = UserInfo.class,
             consumes = "application/json"
     )
-    public void createCommonInfo(@RequestBody UserInfo userInfo) {
+    public void createCommonInfo(@ModelAttribute CreateUserInfoInput createUserInfoInput) {
+        UserInfo userInfo = new UserInfo();
+        BeanUtils.copyProperties(createUserInfoInput, userInfo);
+        logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));
         userInfo.setStatus(1);
         userInfo.setUserId(null);
         logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));

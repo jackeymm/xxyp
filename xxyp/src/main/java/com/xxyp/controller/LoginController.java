@@ -1,24 +1,17 @@
 package com.xxyp.controller;
 
-import com.xxyp.Output.UserInfoOutput;
 import com.xxyp.common.BaseController;
-import com.xxyp.common.BaseException;
 import com.xxyp.model.UserInfo;
-import com.xxyp.service.IUserInfoService;
 import com.xxyp.utils.GsonUtil;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -30,8 +23,8 @@ public class LoginController extends BaseController{
     private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
 
-    @Autowired
-    private IUserInfoService userInfoService;
+//    @Autowired
+//    private IUserInfoService userInfoService;
 
     @RequestMapping(value = "login", method = RequestMethod.POST)
     @ApiOperation(
@@ -43,7 +36,7 @@ public class LoginController extends BaseController{
             response = Map.class,
             consumes = "application/json"
     )
-    public void login(@RequestBody UserInfo userInfo) {
+    public void login(@ModelAttribute UserInfo userInfo) {
         userInfo.setUserName(null);
         userInfo.setUserSource(null);
         userInfo.setUserSourceId(null);

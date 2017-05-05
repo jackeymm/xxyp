@@ -1,4 +1,4 @@
-package com.xxyp.Output;
+package com.xxyp.output;
 
 import com.xxyp.model.UserInfo;
 
