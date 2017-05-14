@@ -7,13 +7,13 @@ public class WorksPhoto {
 
     private String worksPhoto;
 
-    private Byte worksImageOrder;
+    private Integer worksImageOrder;
 
     private Long worksImageLikeCount;
 
     private Long worksImageCommentCount;
 
-    private Byte status;
+    private Integer status;
 
     public Long getWorksPhotoId() {
         return worksPhotoId;
@@ -39,11 +39,11 @@ public class WorksPhoto {
         this.worksPhoto = worksPhoto == null ? null : worksPhoto.trim();
     }
 
-    public Byte getWorksImageOrder() {
+    public Integer getWorksImageOrder() {
         return worksImageOrder;
     }
 
-    public void setWorksImageOrder(Byte worksImageOrder) {
+    public void setWorksImageOrder(Integer worksImageOrder) {
         this.worksImageOrder = worksImageOrder;
     }
 
@@ -63,11 +63,11 @@ public class WorksPhoto {
         this.worksImageCommentCount = worksImageCommentCount;
     }
 
-    public Byte getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(Byte status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 }

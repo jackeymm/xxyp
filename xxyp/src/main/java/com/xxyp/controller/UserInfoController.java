@@ -50,8 +50,9 @@ public class UserInfoController extends BaseController{
             response = UserInfo.class,
             consumes = "application/json"
     )
-    public void createCommonInfo(@ModelAttribute CreateUserInfoInput createUserInfoInput) {
+    public void createUserInfo(@RequestBody CreateUserInfoInput createUserInfoInput) {
         UserInfo userInfo = new UserInfo();
+        logger.info("增加用户信息入参====》"+ GsonUtil.toJson(createUserInfoInput));
         BeanUtils.copyProperties(createUserInfoInput, userInfo);
         logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));
         userInfo.setStatus(1);

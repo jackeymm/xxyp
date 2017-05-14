@@ -10,13 +10,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
 /**
  * Created by jackeymm on 2017/5/2.
  */
-@Service
+@Service("worksService")
 public class WorksServiceImpl implements IWorksService {
 
     private static final Logger logger = LoggerFactory.getLogger(WorksServiceImpl.class);
@@ -46,9 +47,9 @@ public class WorksServiceImpl implements IWorksService {
 
     public List<Works> selectByExample(Works works){
         WorksExample example = new WorksExample();
-//        WorksExample.Criteria criteria = example.createCriteria();
-//        assemblyWorksEqual2Criteria(criteria, works);
-//        logger.info("### example : "+ GsonUtil.toJson(example));
+        WorksExample.Criteria criteria = example.createCriteria();
+        assemblyWorksEqual2Criteria(criteria, works);
+        logger.info("### example : "+ GsonUtil.toJson(example));
         return worksMapper.selectByExample(example);
     }
 
@@ -73,8 +74,24 @@ public class WorksServiceImpl implements IWorksService {
     }
 
     private void assemblyWorksEqual2Criteria(WorksExample.Criteria criteria, Works works){
-        logger.info("assemblyUserInfoEqual2Criteria -- works : "+GsonUtil.toJson(works));
+        logger.info("assemblyWorksEqual2Criteria -- works : "+GsonUtil.toJson(works));
         logger.info("### example : "+GsonUtil.toJson(criteria));
+        if(!StringUtils.isEmpty(works.getReleaseTime()))
+            criteria.andReleaseTimeEqualTo(works.getReleaseTime());
+        if(!StringUtils.isEmpty(works.getStatus()))
+            criteria.andStatusEqualTo(works.getStatus());
+        if(!StringUtils.isEmpty(works.getUserImage()))
+            criteria.andUserImageEqualTo(works.getUserImage());
+        if(!StringUtils.isEmpty(works.getUserId()))
+            criteria.andUserIdEqualTo(works.getUserId());
+        if(!StringUtils.isEmpty(works.getUserName()))
+            criteria.andUserNameEqualTo(works.getUserName());
+        if(!StringUtils.isEmpty(works.getWorksTitle()))
+            criteria.andWorksTitleEqualTo(works.getWorksTitle());
+        if(!StringUtils.isEmpty(works.getWorksAddress()))
+            criteria.andWorksIntroductionEqualTo(works.getWorksIntroduction());
+        if(!StringUtils.isEmpty(works.getWorksId()))
+            criteria.andWorksIdEqualTo(works.getWorksId());
     }
 
 }

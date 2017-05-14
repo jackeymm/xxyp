@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xxyp.dao.WorksPhotoMapper" >
-  <resultMap id="BaseResultMap" type="com.xxyp.model.WorksPhoto" >
+  <resultMap id="WorksPhotoResultMap" type="com.xxyp.model.WorksPhoto" >
     <id column="works_photo_id" property="worksPhotoId" jdbcType="BIGINT" />
     <result column="works_id" property="worksId" jdbcType="BIGINT" />
     <result column="works_photo" property="worksPhoto" jdbcType="VARCHAR" />
@@ -72,7 +72,7 @@
     works_photo_id, works_id, works_photo, works_image_order, works_image_like_count, 
     works_image_comment_count, status
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.xxyp.model.WorksPhotoExample" >
+  <select id="selectByExample" resultMap="WorksPhotoResultMap" parameterType="com.xxyp.model.WorksPhotoExample" >
     select
     <if test="distinct" >
       distinct
@@ -86,7 +86,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+  <select id="selectByPrimaryKey" resultMap="WorksPhotoResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
     from works_photo

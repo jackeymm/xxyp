@@ -19,7 +19,7 @@ public class UserInfo implements java.io.Serializable {
     @ApiModelProperty(required = false,hidden=false, value = "用户来源（1微信，2微博）")
     private Integer userSource;
     @ApiModelProperty(required = false,hidden=false, value = "用户来源uid")
-    private Long userSourceId;
+    private String userSourceId;
     @ApiModelProperty(required = false,hidden=false, value = "手机号")
     private String mobile;
     @ApiModelProperty(required = false,hidden=false, value = "邮箱")
@@ -75,11 +75,11 @@ public class UserInfo implements java.io.Serializable {
         this.userSource = userSource;
     }
 
-    public Long getUserSourceId() {
+    public String getUserSourceId() {
         return userSourceId;
     }
 
-    public void setUserSourceId(Long userSourceId) {
+    public void setUserSourceId(String userSourceId) {
         this.userSourceId = userSourceId;
     }
 

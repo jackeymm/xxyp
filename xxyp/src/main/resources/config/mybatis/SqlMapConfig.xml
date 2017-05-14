@@ -7,10 +7,11 @@
     <settings>
         <setting name="cacheEnabled" value="true" />
     </settings>
-    <typeAliases>
-        <typeAlias alias="user" type="com.xxyp.model.UserInfo"/>
-    </typeAliases>
     <mappers>
         <mapper resource="mapper/UserInfoMapper.xml" />
+        <mapper resource="mapper/WorksMapper.xml" />
+        <mapper resource="mapper/WorksPhotoMapper.xml" />
+        <mapper resource="mapper/DatingShotMapper.xml" />
     </mappers>
 </configuration>
+

@@ -1,7 +1,5 @@
 package com.xxyp.dao;
 
-import com.xxyp.model.Order;
-import com.xxyp.model.OrderExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

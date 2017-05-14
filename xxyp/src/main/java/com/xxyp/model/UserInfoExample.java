@@ -505,7 +505,7 @@ public class UserInfoExample implements java.io.Serializable {
             return (Criteria) this;
         }
 
-        public Criteria andUserSourceIdEqualTo(Long value) {
+        public Criteria andUserSourceIdEqualTo(String value) {
             addCriterion("user_source_id =", value, "userSourceId");
             return (Criteria) this;
         }

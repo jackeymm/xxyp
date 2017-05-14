@@ -17,6 +17,10 @@ public class Works {
 
     private Integer status;
 
+    private String worksTitle;
+
+    private String worksIntroduction;
+
     private List<WorksPhoto> list;
 
     public Long getWorksId() {
@@ -73,6 +77,22 @@ public class Works {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public String getWorksTitle() {
+        return worksTitle;
+    }
+
+    public void setWorksTitle(String worksTitle) {
+        this.worksTitle = worksTitle == null ? null : worksTitle.trim();
+    }
+
+    public String getWorksIntroduction() {
+        return worksIntroduction;
+    }
+
+    public void setWorksIntroduction(String worksIntroduction) {
+        this.worksIntroduction = worksIntroduction == null ? null : worksIntroduction.trim();
     }
 
     public List<WorksPhoto> getList() {

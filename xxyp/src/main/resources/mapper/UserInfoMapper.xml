@@ -8,7 +8,7 @@
     <result column="user_introduction" property="userIntroduction" jdbcType="VARCHAR" />
     <result column="user_identity" property="userIdentity" jdbcType="TINYINT" />
     <result column="user_source" property="userSource" jdbcType="TINYINT" />
-    <result column="user_source_id" property="userSourceId" jdbcType="BIGINT" />
+    <result column="user_source_id" property="userSourceId" jdbcType="VARCHAR" />
     <result column="mobile" property="mobile" jdbcType="VARCHAR" />
     <result column="email" property="email" jdbcType="VARCHAR" />
     <result column="status" property="status" jdbcType="TINYINT" />
