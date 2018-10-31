@@ -18,6 +18,8 @@ public interface IWorksPhotoService {
 
     List<WorksPhoto> selectByExample(WorksPhoto worksPhoto);
 
+    List<WorksPhoto> getHotWorks();
+
     int updateByPrimaryKey(WorksPhoto record);
 
 

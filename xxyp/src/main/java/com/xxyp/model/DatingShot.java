@@ -1,5 +1,7 @@
 package com.xxyp.model;
 
+import java.util.List;
+
 public class DatingShot {
     private Long datingShotId;
 
@@ -23,7 +25,9 @@ public class DatingShot {
 
     private String datingShotIntroduction;
 
-    private String datingShotImages;
+    private List<DatingShotPhoto> datingShotImages;
+
+    private Long datingUserId;
 
     public Long getDatingShotId() {
         return datingShotId;
@@ -113,11 +117,19 @@ public class DatingShot {
         this.datingShotIntroduction = datingShotIntroduction == null ? null : datingShotIntroduction.trim();
     }
 
-    public String getDatingShotImages() {
+    public List<DatingShotPhoto>  getDatingShotImages() {
         return datingShotImages;
     }
 
-    public void setDatingShotImages(String datingShotImages) {
-        this.datingShotImages = datingShotImages == null ? null : datingShotImages.trim();
+    public void setDatingShotImages(List<DatingShotPhoto> datingShotImages) {
+        this.datingShotImages = datingShotImages;
+    }
+
+    public Long getDatingUserId() {
+        return datingUserId;
+    }
+
+    public void setDatingUserId(Long datingUserId) {
+        this.datingUserId = datingUserId;
     }
 }

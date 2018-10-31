@@ -241,4 +241,18 @@
       status = #{status,jdbcType=TINYINT}
     where works_photo_id = #{worksPhotoId,jdbcType=BIGINT}
   </update>
+  <select id="getHotWorks" parameterType="com.xxyp.model.WorksPhoto" resultMap="WorksPhotoResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from works_photo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause} desc
+    </if>
+  </select>
 </mapper>

@@ -17,8 +17,10 @@ bin/
 
 # Maven
 log/
-target/
+*target/
 
 # Syswin
 disconf/
 logs/
+
+*.zip

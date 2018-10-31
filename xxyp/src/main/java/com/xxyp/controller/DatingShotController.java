@@ -1,13 +1,13 @@
 package com.xxyp.controller;
 
 import com.xxyp.common.BaseController;
-import com.xxyp.input.CreateDatingShotInput;
+import com.xxyp.input.*;
 import com.xxyp.model.DatingShot;
-import com.xxyp.model.Works;
-import com.xxyp.model.WorksPhoto;
+import com.xxyp.model.DatingShotPhoto;
+import com.xxyp.model.UserInfo;
+import com.xxyp.service.IDatingShotPhotoService;
 import com.xxyp.service.IDatingShotService;
-import com.xxyp.service.IWorksPhotoService;
-import com.xxyp.service.IWorksService;
+import com.xxyp.service.IUserInfoService;
 import com.xxyp.utils.GsonUtil;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,6 +37,11 @@ public class DatingShotController extends BaseController{
     @Autowired
     private IDatingShotService datingShotService;
 
+    @Autowired
+    private IDatingShotPhotoService datingShotPhotoService;
+
+    @Autowired
+    private IUserInfoService userInfoService;
 
 
     @RequestMapping(value = "createDatingShot", method = RequestMethod.POST)
@@ -55,6 +61,8 @@ public class DatingShotController extends BaseController{
         datingShot.setStatus(1);
         datingShot.setDatingShotId(null);
         datingShot.setReleaseTime(System.currentTimeMillis());
+        datingShot.setDescription("");
+        datingShot.setDatingUserId(0L);
         logger.info("### createDatingShot param : "+GsonUtil.toJson(datingShot));
         int result = datingShotService.insert(datingShot);
         logger.info("### createDatingShot result : "+result);
@@ -63,7 +71,16 @@ public class DatingShotController extends BaseController{
         logger.info("### createDatingShot list : "+GsonUtil.toJson(list));
 
         Long datingShotId = list.get(list.size()-1).getDatingShotId();
-        logger.info("### createDatingShot worksId : "+datingShotId);
+        logger.info("### createDatingShot datingShotId : "+datingShotId);
+        for(CreateDatingShotPhotoInput input : createDatingShotInput.getDatingShotImages()){
+            DatingShotPhoto datingShotPhoto = new DatingShotPhoto();
+            datingShotPhoto.setDatingShotPhoto(input.getDatingShotPhoto());
+            datingShotPhoto.setDatingShotImageOrder(input.getDatingShotImageOrder());
+            datingShotPhoto.setDatingShotId(datingShotId);
+            datingShotPhoto.setStatus(1);
+            int datingShotPhotoResult = datingShotPhotoService.insert(datingShotPhoto);
+            logger.info("### add DatingShot : add DatingShotPhoto"+datingShotPhoto);
+        }
 
         Map resultMap = new HashMap();
         resultMap.put("datingShotId",datingShotId);
@@ -81,12 +98,24 @@ public class DatingShotController extends BaseController{
             consumes = "application/json"
     )
 
-    public void updateDatingShot(@RequestBody DatingShot datingShot) {
+    public void updateDatingShot(@RequestBody UpdateDatingShotInput input) {
+        DatingShot datingShot = new DatingShot();
+        BeanUtils.copyProperties(input, datingShot);
         logger.info("### updateDatingShot param : "+GsonUtil.toJson(datingShot));
-        datingShot.setStatus(1);
+        if(StringUtils.isEmpty(datingShot.getStatus())){
+            datingShot.setStatus(1);
+        }
+        datingShot.setUserId(null);
         datingShot.setReleaseTime(System.currentTimeMillis());
         int result = datingShotService.updateByPrimaryKey(datingShot);
         logger.info("### updateDatingShot result : "+result);
+
+        for (UpdateDatingShotPhotoInput datingShotPhotoInput : input.getDatingShotImages()){
+            DatingShotPhoto datingShotPhoto  = new DatingShotPhoto();
+            BeanUtils.copyProperties(datingShotPhotoInput, datingShotPhoto);
+            int datingShotPhotoResult = datingShotPhotoService.updateByPrimaryKey(datingShotPhoto);
+            logger.info("### updateWorks : updateWorksPhoto : "+datingShotPhotoResult);
+        }
         outputData();
     }
 
@@ -97,13 +126,34 @@ public class DatingShotController extends BaseController{
                     "Method: GET</br>" +
                     "Error Code: </br>"
                     ,
-            response = List.class,
+            response = DatingShot.class,
+            responseContainer = "List",
             consumes = "application/json"
     )
-    public void getDatingShot(@ModelAttribute DatingShot datingShot) {
+    public void getDatingShot(@ModelAttribute GetDatingShotInput input) {
+        DatingShot datingShot = new DatingShot();
+        BeanUtils.copyProperties(input, datingShot);
+        datingShot.setStatus(1);
         List<DatingShot> resultList = datingShotService.selectByExample(datingShot);
+        logger.info("getDatingShot : resultList : "+GsonUtil.toJson(resultList));
+        for (int i = 0; i < resultList.size(); i++){
+            DatingShot datingShot1 = resultList.get(i);
+            DatingShotPhoto datingShotPhoto = new DatingShotPhoto();
+            datingShotPhoto.setDatingShotId(datingShot1.getDatingShotId());
+            datingShotPhoto.setStatus(1);
+            List<DatingShotPhoto> datingShotPhotoList = datingShotPhotoService.selectByExample(datingShotPhoto);
+            UserInfo userInfo = new UserInfo();
+            userInfo.setUserId(datingShot1.getUserId());
+            List<UserInfo> userInfos = userInfoService.selectByExample(userInfo);
+            if(userInfos.size() > 0){
+                datingShot1.setUserName(userInfos.get(0).getUserName());
+                datingShot1.setUserImage(userInfos.get(0).getUserImage());
+            }
+            datingShot1.setDatingShotImages(datingShotPhotoList);
+            resultList.set(i,datingShot1);
+        }
         Map returnMap = new HashMap();
-        returnMap.put("works",resultList);
+        returnMap.put("datingShot",resultList);
         outputData(returnMap);
     }
 

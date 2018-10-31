@@ -18,6 +18,9 @@ public interface WorksPhotoMapper {
 
     List<WorksPhoto> selectByExample(WorksPhotoExample example);
 
+
+    List<WorksPhoto> getHotWorks(WorksPhotoExample example);
+
     WorksPhoto selectByPrimaryKey(Long worksPhotoId);
 
     int updateByExampleSelective(@Param("record") WorksPhoto record, @Param("example") WorksPhotoExample example);

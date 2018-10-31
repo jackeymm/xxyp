@@ -3,15 +3,16 @@ package com.xxyp.input;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class CreateDatingShotInput implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(required = false,hidden=false, value = "用户ID")
     private Long userId;
-    @ApiModelProperty(required = false,hidden=false, value = "用户昵称")
+    @ApiModelProperty(required = false,hidden=true, value = "用户昵称")
     private String userName;
-    @ApiModelProperty(required = false,hidden=false, value = "用户头像")
+    @ApiModelProperty(required = false,hidden=true, value = "用户头像")
     private String userImage;
     @ApiModelProperty(required = false,hidden=false, value = "约拍地点")
     private String datingShotAddress;
@@ -19,12 +20,12 @@ public class CreateDatingShotInput implements Serializable{
     private String purpose;
     @ApiModelProperty(required = false,hidden=false, value = "付款方式")
     private String paymentMethod;
-    @ApiModelProperty(required = false,hidden=false, value = "说明")
+    @ApiModelProperty(required = false,hidden=true, value = "说明")
     private String description;
     @ApiModelProperty(required = false,hidden=false, value = "约拍简介")
     private String datingShotIntroduction;
-    @ApiModelProperty(required = false,hidden=false, value = "约拍照片,多张照片通过@分割")
-    private String datingShotImages;
+    @ApiModelProperty(required = false,hidden=false, value = "约拍照片,list")
+    private List<CreateDatingShotPhotoInput> datingShotImages;
 
 
     public Long getUserId() {
@@ -91,11 +92,11 @@ public class CreateDatingShotInput implements Serializable{
         this.datingShotIntroduction = datingShotIntroduction == null ? null : datingShotIntroduction.trim();
     }
 
-    public String getDatingShotImages() {
+    public List<CreateDatingShotPhotoInput> getDatingShotImages() {
         return datingShotImages;
     }
 
-    public void setDatingShotImages(String datingShotImages) {
-        this.datingShotImages = datingShotImages == null ? null : datingShotImages.trim();
+    public void setDatingShotImages(List<CreateDatingShotPhotoInput> datingShotImages) {
+        this.datingShotImages = datingShotImages;
     }
 }

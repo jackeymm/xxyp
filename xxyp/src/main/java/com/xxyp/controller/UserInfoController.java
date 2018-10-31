@@ -3,10 +3,13 @@ package com.xxyp.controller;
 import com.xxyp.common.BaseController;
 import com.xxyp.common.BaseException;
 import com.xxyp.input.CreateUserInfoInput;
+import com.xxyp.input.GetUserInfoInput;
+import com.xxyp.model.TokenEntity;
 import com.xxyp.model.UserInfo;
 import com.xxyp.output.UserInfoOutput;
 import com.xxyp.service.IUserInfoService;
 import com.xxyp.utils.GsonUtil;
+import com.xxyp.utils.ShiroUtil;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,20 +56,21 @@ public class UserInfoController extends BaseController{
     )
     public void createUserInfo(@RequestBody CreateUserInfoInput createUserInfoInput) {
         UserInfo userInfo = new UserInfo();
-        logger.info("增加用户信息入参====》"+ GsonUtil.toJson(createUserInfoInput));
         BeanUtils.copyProperties(createUserInfoInput, userInfo);
-        logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));
         userInfo.setStatus(1);
         userInfo.setUserId(null);
         logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));
         int result = userInfoService.insert(userInfo);
+        ShiroUtil shiroUtil = new ShiroUtil();
+        TokenEntity tokenEntity = shiroUtil.loginUser(userInfo);
+
         List<UserInfo> list = userInfoService.selectByExample(userInfo);
         logger.info("result : "+result);
         logger.info("userInfo : "+GsonUtil.toJson(list));
         Map resultMap = new HashMap();
         resultMap.put("userId", list.get(list.size()-1).getUserId());
-        resultMap.put("status", "success");
-        resultMap.put("token", "tokenTemp");
+        resultMap.put("token", tokenEntity.getToken());
+
         outputData(resultMap);
     }
 
@@ -80,10 +85,27 @@ public class UserInfoController extends BaseController{
             response = UserInfoOutput.class,
             consumes = "application/json"
     )
-    public void selectUserInfo(@ModelAttribute UserInfo userInfo) {
-        logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));
-        List<UserInfo> list = userInfoService.selectByExample(userInfo);
-        outputData(list);
+    public void selectUserInfo(@ModelAttribute GetUserInfoInput getUserInfoInput) {
+        logger.info("查询用户信息入参====》"+ GsonUtil.toJson(getUserInfoInput));
+        Map resultmap = new HashMap();
+        String userIds = getUserInfoInput.getUserIds();
+        String[] strUserIds = null;
+        List<UserInfo> list = new ArrayList<UserInfo>();
+        if(!StringUtils.isEmpty(userIds) && userIds.contains(",")){
+            strUserIds = userIds.split(",");
+            for(String userId : strUserIds){
+                UserInfo userInfo = new UserInfo();
+                userInfo.setUserId(Long.parseLong(userId));
+                List<UserInfo> templist = userInfoService.selectByExample(userInfo);
+                list.addAll(templist);
+            }
+        }else{
+            UserInfo userInfo = new UserInfo();
+            copyProperties(userInfo, getUserInfoInput);
+            list = userInfoService.selectByExample(userInfo);
+        }
+        resultmap.put("users",list);
+        outputData(resultmap);
     }
 
     @RequestMapping(value = "updateUserInfo", method = RequestMethod.POST)
@@ -116,7 +138,16 @@ public class UserInfoController extends BaseController{
         if(StringUtils.isEmpty(userInfo.getUserImage())){
            throw new BaseException(1004, "用户头像为空，添加失败");
         }
-
-
     }
+
+    private void copyProperties(UserInfo userInfo, GetUserInfoInput getUserInfoInput){
+        if(!StringUtils.isEmpty(getUserInfoInput.getUserIds())){
+            userInfo.setUserId(Long.parseLong(getUserInfoInput.getUserIds()));
+        }
+        userInfo.setUserName(getUserInfoInput.getUserName());
+        userInfo.setEmail(getUserInfoInput.getEmail());
+        userInfo.setMobile(getUserInfoInput.getMobile());
+        userInfo.setUserSourceId(getUserInfoInput.getUserSourceId());
+    }
+
 }

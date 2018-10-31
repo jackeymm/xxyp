@@ -2,12 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9d47c9-1da8-4eba-83c1-48240ea5bde2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/Output/UserInfoOutput.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/Output/UserInfoOutput.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateDatingShotPhotoInput.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-shiro.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/dao/OrderMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/OrderController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/dao/OrderMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/Order.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/OrderExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/OrderExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/OrderExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/OrderExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/IOrderService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/OrderServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/OrderController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/OrderMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/Order.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/OrderExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/OrderExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/OrderExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/OrderExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IOrderService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/OrderServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/AbstractInput.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/AbstractInput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/BaseController.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/BaseController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/BaseException.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/BaseException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/CodeMsg.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/CodeMsg.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/FacadeResult.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/FacadeResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/JsonConvertObject.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/JsonConvertObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/Meta.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/Meta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/SwaggerConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/SwaggerConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/HotWorksController.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/HotWorksController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/UserInfoController.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/UserInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/dao/UserInfoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/dao/UserInfoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/dao/WorksMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/dao/WorksMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/dao/WorksPhotoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/dao/WorksPhotoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/input/CreateUserInfoInput.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/input/CreateUserInfoInput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/Works.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/Works.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhoto.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhoto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/WorksPhotoExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/output/UserInfoOutput.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/output/UserInfoOutput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/IUserInfoService.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/IUserInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/IWorksService.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/IWorksService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/WorksServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/WorksServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/utils/DateUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/utils/DateUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/utils/GsonUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/utils/GsonUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/utils/GzipUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/utils/GzipUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xxyp/utils/StringUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/utils/StringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/AbstractInput.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/AbstractInput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/BaseController.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/BaseController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/BaseException.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/BaseException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/CodeMsg.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/CodeMsg.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/FacadeResult.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/FacadeResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/JsonConvertObject.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/JsonConvertObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/Meta.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/Meta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/SwaggerConfig.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/SwaggerConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/HotWorksController.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/HotWorksController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/UserInfoController.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/UserInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/UserInfoMapper.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/UserInfoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/WorksMapper.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/WorksMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/WorksPhotoMapper.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/WorksPhotoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/CreateUserInfoInput.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/CreateUserInfoInput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfo.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/Works.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/Works.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample$Criteria.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample$Criterion.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhoto.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhoto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample$Criteria.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample$Criterion.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/WorksPhotoExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/output/UserInfoOutput.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/output/UserInfoOutput.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IUserInfoService.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IUserInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IWorksService.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IWorksService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/WorksServiceImpl.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/WorksServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/DateUtils.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/DateUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/GsonUtil.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/GsonUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/GzipUtils.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/GzipUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/StringUtils.class" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/StringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/xxyp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/xxyp_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/dao/WorksPhotoMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/dao/WorksPhotoMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateDatingShotInput.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateDatingShotInput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShot.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotExample.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksPhoto.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksPhoto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksPhotoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksPhotoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/mybatis/SqlMapConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis/SqlMapConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/spring/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/WorksMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WorksMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/WorksPhotoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WorksPhotoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/WorksMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/WorksMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/WorksPhotoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/WorksPhotoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/WorksMapper.xml" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/WorksMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/WorksPhotoMapper.xml" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/WorksPhotoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xxyp.iml" afterPath="$PROJECT_DIR$/xxyp.iml" />
     </list>
     <ignored path="xxyp.iws" />
@@ -32,129 +168,186 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GetFansInput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetFansInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#445#446#0" expanded="false" />
+                <element signature="e#478#479#0" expanded="false" />
+                <element signature="e#528#529#0" expanded="false" />
+                <element signature="e#572#573#0" expanded="false" />
+                <element signature="e#605#606#0" expanded="false" />
+                <element signature="e#636#637#0" expanded="false" />
+                <element signature="e#682#683#0" expanded="false" />
+                <element signature="e#722#723#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FansOutPut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/output/FansOutPut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#267#268#0" expanded="false" />
+                <element signature="e#296#297#0" expanded="false" />
+                <element signature="e#338#339#0" expanded="false" />
+                <element signature="e#374#375#0" expanded="false" />
+                <element signature="e#408#409#0" expanded="false" />
+                <element signature="e#437#438#0" expanded="false" />
+                <element signature="e#482#483#0" expanded="false" />
+                <element signature="e#518#519#0" expanded="false" />
+                <element signature="e#560#561#0" expanded="false" />
+                <element signature="e#597#598#0" expanded="false" />
+                <element signature="e#658#659#0" expanded="false" />
+                <element signature="e#710#711#0" expanded="false" />
+                <element signature="e#747#748#0" expanded="false" />
+                <element signature="e#778#779#0" expanded="false" />
+                <element signature="e#828#829#0" expanded="false" />
+                <element signature="e#868#869#0" expanded="false" />
+                <element signature="e#903#904#0" expanded="false" />
+                <element signature="e#932#933#0" expanded="false" />
+                <element signature="e#978#979#0" expanded="false" />
+                <element signature="e#1014#1015#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LikesAndFollowsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="46" column="61" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="930">
+              <caret line="87" column="46" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotWorksController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java">
+      <file leaf-file-name="FansServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+            <state relative-caret-position="1320">
+              <caret line="111" column="42" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1108#1109#0" expanded="false" />
+                <element signature="e#1156#1157#0" expanded="false" />
+                <element signature="e#4847#4848#0" expanded="false" />
+                <element signature="e#4907#4908#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Likes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Likes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="68" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="68" />
+              <folding>
+                <element signature="e#867#868#0" expanded="false" />
+                <element signature="e#897#898#0" expanded="false" />
+                <element signature="e#941#942#0" expanded="false" />
+                <element signature="e#979#980#0" expanded="false" />
+                <element signature="e#1014#1015#0" expanded="false" />
+                <element signature="e#1047#1048#0" expanded="false" />
+                <element signature="e#1097#1098#0" expanded="false" />
+                <element signature="e#1141#1142#0" expanded="false" />
+                <element signature="e#1172#1173#0" expanded="false" />
+                <element signature="e#1201#1202#0" expanded="false" />
+                <element signature="e#1243#1244#0" expanded="false" />
+                <element signature="e#1279#1280#0" expanded="false" />
+                <element signature="e#1312#1313#0" expanded="false" />
+                <element signature="e#1343#1344#0" expanded="false" />
+                <element signature="e#1389#1390#0" expanded="false" />
+                <element signature="e#1429#1430#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFans.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserFans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#270#271#0" expanded="false" />
+                <element signature="e#299#300#0" expanded="false" />
+                <element signature="e#341#342#0" expanded="false" />
+                <element signature="e#377#378#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-dao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-dao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorksMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/WorksMapper.xml">
+      <file leaf-file-name="CodeMsg.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1493735140000" expanded="true" signature="3728:3839" ph="select from works" />
-                <marker date="1493735140000" expanded="true" signature="3923:3988" ph="delete from " />
-                <marker date="1493735140000" expanded="true" signature="4082:4099" ph="delete from " />
-                <marker date="1493735140000" expanded="true" signature="4270:4617" ph="insert into works... " />
-                <marker date="1493735140000" expanded="true" signature="6063:6089" ph="select count... works" />
-                <marker date="1493735140000" expanded="true" signature="7257:7657" ph="update works... " />
-                <marker date="1493735140000" expanded="true" signature="7859:8538" ph="update works... " />
-                <marker date="1493735140000" expanded="true" signature="8628:8982" ph="update works... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorksPhotoMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/WorksPhotoMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-              <folding>
-                <marker date="1493735113000" expanded="true" signature="3861:3989" ph="select from works_photo" />
-                <marker date="1493735113000" expanded="true" signature="4073:4155" ph="delete from " />
-                <marker date="1493735113000" expanded="true" signature="4254:4277" ph="delete from " />
-                <marker date="1493735113000" expanded="true" signature="4453:4875" ph="insert into works_photo... " />
-                <marker date="1493735113000" expanded="true" signature="6470:6502" ph="select count... works_photo" />
-                <marker date="1493735113000" expanded="true" signature="7777:8252" ph="update works... " />
-                <marker date="1493735113000" expanded="true" signature="8459:9240" ph="update works... " />
-                <marker date="1493735113000" expanded="true" signature="9335:9764" ph="update works... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IWorksService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfoServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="-165">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorksServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java">
+      <file leaf-file-name="Fans.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Fans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#223#224#0" expanded="false" />
+                <element signature="e#252#253#0" expanded="false" />
+                <element signature="e#294#295#0" expanded="false" />
+                <element signature="e#330#331#0" expanded="false" />
+                <element signature="e#365#366#0" expanded="false" />
+                <element signature="e#398#399#0" expanded="false" />
+                <element signature="e#448#449#0" expanded="false" />
+                <element signature="e#492#493#0" expanded="false" />
+                <element signature="e#525#526#0" expanded="false" />
+                <element signature="e#556#557#0" expanded="false" />
+                <element signature="e#602#603#0" expanded="false" />
+                <element signature="e#642#643#0" expanded="false" />
+                <element signature="e#676#677#0" expanded="false" />
+                <element signature="e#705#706#0" expanded="false" />
+                <element signature="e#750#751#0" expanded="false" />
+                <element signature="e#786#787#0" expanded="false" />
+                <element signature="e#828#829#0" expanded="false" />
+                <element signature="e#865#866#0" expanded="false" />
+                <element signature="e#926#927#0" expanded="false" />
+                <element signature="e#978#979#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OrderServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-              <folding>
-                <element signature="e#1822#1823#0" expanded="true" />
-                <element signature="e#1883#1884#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserInfoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IUserInfoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorksMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/WorksMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="41" selection-start-line="8" selection-start-column="3" selection-end-line="28" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -181,51 +374,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/UserInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/GsonUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/JsonConvertObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/FacadeResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/Meta.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/AbstractInput.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-dao.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/application-service.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-transaction.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/mybatis/SqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IOrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/Output/UserInfoOutput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IUserInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j/log4j.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/OrderExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/GzipUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseException.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FansMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/Fans.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/output/FansOutPut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xxyp/test/KeyGenNew.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/UserAgentInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHeaderInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/LoginUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/CommonDefine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/ContentType.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/IShardingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisHashNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/BinaryRedisImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/ObjectRedis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisRangeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/NamedThreadFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClientPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClientPoolFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/SerializeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/TokenEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHeader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/redis.xsd" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/redisConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/UserBaseRequestInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/EntityCache.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/TestCache.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/ICacheManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OurRealmImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/IShardingStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/Likes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/LikesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserFans.java" />
       </list>
     </option>
   </component>
@@ -246,7 +445,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$USER_HOME$/Tools/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="$USER_HOME$/installationPackages/maven/settings_zd.xml" />
+        <option name="userSettingsFile" value="$USER_HOME$/installationPackages/maven/settings_ali.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -256,13 +455,37 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xxyp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="xxyp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
     <option name="y" value="23" />
-    <option name="width" value="1225" />
-    <option name="height" value="777" />
+    <option name="width" value="1280" />
+    <option name="height" value="722" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -272,16 +495,79 @@
             <id />
           </State>
           <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Application Server Specific Inspections</id>
+          </State>
+          <State>
             <id>CodeSpring CoreSpring</id>
           </State>
           <State>
-            <id>JSP Inspections</id>
+            <id>Finalization issuesJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>OtherGroovy</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Properties FilesJava</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
           </State>
           <State>
             <id>Spring</id>
           </State>
           <State>
             <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>Thymeleaf</id>
+          </State>
+          <State>
+            <id>XMLSpring CoreSpring</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -318,344 +604,23 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xxyp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="BaseController&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfoser&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java&#10;baseCon&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfo&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/UserInfo.java&#10;swa&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/SwaggerConfig.java&#10;web&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/web/WEB-INF/web.xml&#10;UserInfoMapper&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/dao/UserInfoMapper.java" />
+    <property name="project.structure.side.proportion" value="0.1949807" />
+    <property name="SearchEverywhereHistoryKey" value="ou&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/OurRealmImpl.java&#10;login&#9;PSI&#9;JAVA://com.xxyp.controller.LoginController&#10;FansServiceImpl&#9;PSI&#9;JAVA://com.xxyp.service.impl.FansServiceImpl&#10;applicationContext-dao.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/config/spring/applicationContext-dao.xml&#10;works&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/Works.java&#10;userinfoc&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/controller/UserInfoController.java&#10;BaseController&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfoser&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java&#10;baseCon&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfo&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/UserInfo.java&#10;swa&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/SwaggerConfig.java&#10;web&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/web/WEB-INF/web.xml&#10;UserInfoMapper&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/dao/UserInfoMapper.java" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="145" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="199" />
@@ -675,14 +640,91 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xxyp.controller" />
+      <recent name="com.xxyp.model" />
+      <recent name="com.xxyp.common" />
+      <recent name="com.xxyp.redis" />
       <recent name="com.xxyp.utils" />
+      <recent name="com.xxyp.output" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/config/spring" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.xxyp">
+    <configuration default="false" name="KeyGenNew" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.xxyp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.xxyp.test.KeyGenNew" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="xxyp" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCache.testCacheManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.xxyp.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="xxyp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.xxyp.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.xxyp.cache.TestCache" />
+      <option name="METHOD_NAME" value="testCacheManager" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.xxyp.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="xxyp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.xxyp.cache" />
+      <option name="MAIN_CLASS_NAME" value="com.xxyp.cache.TestCache" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -1117,7 +1159,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="xxyp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.75" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.7">
+    <configuration default="false" name="xxyp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.75" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="1.7">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/swagger-ui.html" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -1190,9 +1232,19 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.xxyp" />
+      <item index="1" class="java.lang.String" itemvalue="Application.KeyGenNew" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCache.testCacheManager" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCache" />
     </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCache.testCacheManager" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestCache" />
+        <item index="2" class="java.lang.String" itemvalue="Application.KeyGenNew" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1229,7 +1281,40 @@
       <workItem from="1493130932840" duration="1680000" />
       <workItem from="1493632471067" duration="5007000" />
       <workItem from="1493733005391" duration="4112000" />
-      <workItem from="1493965235605" duration="1036000" />
+      <workItem from="1493965235605" duration="3199000" />
+      <workItem from="1493970380619" duration="10067000" />
+      <workItem from="1494232958115" duration="11885000" />
+      <workItem from="1494727007999" duration="9296000" />
+      <workItem from="1497275990624" duration="5137000" />
+      <workItem from="1497879947071" duration="2166000" />
+      <workItem from="1498012634188" duration="977000" />
+      <workItem from="1498096525129" duration="707000" />
+      <workItem from="1498296253656" duration="7643000" />
+      <workItem from="1499412746245" duration="1722000" />
+      <workItem from="1500201326991" duration="14313000" />
+      <workItem from="1500383927462" duration="4981000" />
+      <workItem from="1502411253390" duration="1136000" />
+      <workItem from="1502414746478" duration="1944000" />
+      <workItem from="1503885519817" duration="1069000" />
+      <workItem from="1504010618558" duration="5211000" />
+      <workItem from="1507879700133" duration="4463000" />
+      <workItem from="1508210012799" duration="2303000" />
+      <workItem from="1508319957040" duration="35000" />
+      <workItem from="1508468938022" duration="443000" />
+      <workItem from="1508925719972" duration="51000" />
+      <workItem from="1508925824145" duration="811000" />
+      <workItem from="1508926647623" duration="2808000" />
+      <workItem from="1510041968758" duration="84000" />
+      <workItem from="1510395948861" duration="1066000" />
+      <workItem from="1511691555398" duration="2197000" />
+      <workItem from="1513405362687" duration="572000" />
+      <workItem from="1517802258569" duration="4417000" />
+      <workItem from="1519459717392" duration="729000" />
+      <workItem from="1522206073909" duration="25131000" />
+      <workItem from="1522833916739" duration="3339000" />
+      <workItem from="1523237075544" duration="33000" />
+      <workItem from="1529394208435" duration="42000" />
+      <workItem from="1533692298563" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="build frame&#10;add saveUser">
       <created>1489602579933</created>
@@ -1252,54 +1337,73 @@
       <option name="project" value="LOCAL" />
       <updated>1493633530957</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add DatingShot">
+      <created>1494736560920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1494736560920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestCache - 2018.03.29 at 11h 38m 46s.xml">
+      <configuration name="TestCache" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCache_testCacheManager - 2018.03.29 at 11h 37m 39s.xml">
+      <configuration name="TestCache.testCacheManager" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCache_testCacheManager - 2018.03.29 at 11h 40m 14s.xml">
+      <configuration name="TestCache.testCacheManager" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108843000" />
+    <option name="totallyTimeSpent" value="239972000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="23" width="1225" height="777" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="722" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5246711" sideWeight="0.50646204" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271344" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47040972" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552505" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27979714" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5690789" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47682118" sideWeight="0.49353796" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260097" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257329" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57056147" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262519" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5246711" sideWeight="0.50646204" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271344" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552505" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1307,20 +1411,21 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57056147" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5690789" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47040972" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47682118" sideWeight="0.49353796" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27979714" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31260097" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262519" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257329" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1339,18 +1444,13 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="build frame&#10;add saveUser" />
     <MESSAGE value="update usermanagers" />
-    <option name="LAST_COMMIT_MESSAGE" value="update usermanagers" />
+    <MESSAGE value="add DatingShot" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DatingShot" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>40</line>
-          <properties class="com.xxyp.common.BaseController" method="setReqAndRes" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
           <line>159</line>
@@ -1359,21 +1459,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
           <line>62</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
@@ -1388,37 +1476,67 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java</url>
           <line>66</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>80</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java</url>
+          <line>137</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>91</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java</url>
+          <line>143</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>145</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java</url>
+          <line>146</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1427,324 +1545,188 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-transaction.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="163">
+          <caret line="12" column="164" selection-start-line="12" selection-start-column="146" selection-end-line="12" selection-end-column="164" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/DateUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/redis/NamedThreadFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="75">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClientPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClientPoolFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/SerializeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/TokenEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/FacadeResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="34" />
-          <folding />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/binding/MapperProxy.class">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestHeader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/binding/MapperMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHeader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4545">
-          <caret line="342" column="0" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema-instance.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="226">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis/SqlMapConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="403">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="42" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="42" />
+        <state relative-caret-position="30">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/redisConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/UserBaseRequestInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="93" column="55" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.1.4.RELEASE/spring-webmvc-4.1.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5760">
-          <caret line="510" column="0" selection-start-line="510" selection-start-column="0" selection-end-line="510" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.1.4.RELEASE/spring-webmvc-4.1.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6105">
-          <caret line="471" column="0" selection-start-line="471" selection-start-column="0" selection-end-line="471" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/JsonConvertObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/session/Session.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j/log4j.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/EntityCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="193">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/annotation/ModelFactory.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/TestCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Order.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="193">
+          <caret line="227" column="6" selection-start-line="227" selection-start-column="6" selection-end-line="227" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/OrderExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6375">
-          <caret line="446" column="44" selection-start-line="446" selection-start-column="44" selection-end-line="446" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/GzipUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5490">
-          <caret line="387" column="24" selection-start-line="387" selection-start-column="24" selection-end-line="387" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/UserInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/ICacheManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="31" selection-start-line="6" selection-start-column="22" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.1.4.RELEASE/spring-core-4.1.4.RELEASE.jar!/org/springframework/util/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="142" column="36" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/output/UserInfoOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="190">
+          <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="536" column="48" selection-start-line="536" selection-start-column="48" selection-end-line="536" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksPhoto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksPhotoExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
-          <folding>
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#1651#1652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/WorksMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="41" selection-start-line="8" selection-start-column="3" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding>
-            <element signature="e#1822#1823#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1752,87 +1734,274 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OurRealmImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/redis/IShardingStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/application-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/LikesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/FansExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3660">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="118" column="54" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetFansInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+            <element signature="e#636#637#0" expanded="false" />
+            <element signature="e#682#683#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/output/FansOutPut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#267#268#0" expanded="false" />
+            <element signature="e#296#297#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#482#483#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#710#711#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#828#829#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#932#933#0" expanded="false" />
+            <element signature="e#978#979#0" expanded="false" />
+            <element signature="e#1014#1015#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="930">
+          <caret line="87" column="46" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="1320">
+          <caret line="111" column="42" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1108#1109#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#4847#4848#0" expanded="false" />
+            <element signature="e#4907#4908#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Likes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="68" />
+          <folding>
+            <element signature="e#867#868#0" expanded="false" />
+            <element signature="e#897#898#0" expanded="false" />
+            <element signature="e#941#942#0" expanded="false" />
+            <element signature="e#979#980#0" expanded="false" />
+            <element signature="e#1014#1015#0" expanded="false" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1141#1142#0" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1243#1244#0" expanded="false" />
+            <element signature="e#1279#1280#0" expanded="false" />
+            <element signature="e#1312#1313#0" expanded="false" />
+            <element signature="e#1343#1344#0" expanded="false" />
+            <element signature="e#1389#1390#0" expanded="false" />
+            <element signature="e#1429#1430#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserFans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#270#271#0" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#341#342#0" expanded="false" />
+            <element signature="e#377#378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Fans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#223#224#0" expanded="false" />
+            <element signature="e#252#253#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#365#366#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#492#493#0" expanded="false" />
+            <element signature="e#525#526#0" expanded="false" />
+            <element signature="e#556#557#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#642#643#0" expanded="false" />
+            <element signature="e#676#677#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#750#751#0" expanded="false" />
+            <element signature="e#786#787#0" expanded="false" />
+            <element signature="e#828#829#0" expanded="false" />
+            <element signature="e#865#866#0" expanded="false" />
+            <element signature="e#926#927#0" expanded="false" />
+            <element signature="e#978#979#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IWorksService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+        <state relative-caret-position="-165">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/WorksMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1493735140000" expanded="true" signature="3728:3839" ph="select from works" />
-            <marker date="1493735140000" expanded="true" signature="3923:3988" ph="delete from " />
-            <marker date="1493735140000" expanded="true" signature="4082:4099" ph="delete from " />
-            <marker date="1493735140000" expanded="true" signature="4270:4617" ph="insert into works... " />
-            <marker date="1493735140000" expanded="true" signature="6063:6089" ph="select count... works" />
-            <marker date="1493735140000" expanded="true" signature="7257:7657" ph="update works... " />
-            <marker date="1493735140000" expanded="true" signature="7859:8538" ph="update works... " />
-            <marker date="1493735140000" expanded="true" signature="8628:8982" ph="update works... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/WorksPhotoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <marker date="1493735113000" expanded="true" signature="3861:3989" ph="select from works_photo" />
-            <marker date="1493735113000" expanded="true" signature="4073:4155" ph="delete from " />
-            <marker date="1493735113000" expanded="true" signature="4254:4277" ph="delete from " />
-            <marker date="1493735113000" expanded="true" signature="4453:4875" ph="insert into works_photo... " />
-            <marker date="1493735113000" expanded="true" signature="6470:6502" ph="select count... works_photo" />
-            <marker date="1493735113000" expanded="true" signature="7777:8252" ph="update works... " />
-            <marker date="1493735113000" expanded="true" signature="8459:9240" ph="update works... " />
-            <marker date="1493735113000" expanded="true" signature="9335:9764" ph="update works... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1846,7 +2015,8 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1949807" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1854,11 +2024,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (xxyp)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1949807" />
               </list>
             </option>
           </splitter-proportions>
@@ -1869,7 +2039,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1949807" />
               </list>
             </option>
           </splitter-proportions>
@@ -1881,7 +2051,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1949807" />
               </list>
             </option>
           </splitter-proportions>
@@ -1889,12 +2059,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>xxyp</last-edited>
+          <last-edited>Web|xxyp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
+                <option value="0.1949807" />
               </list>
             </option>
           </splitter-proportions>
@@ -1918,7 +2087,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.44208494" />
               </list>
             </option>
           </splitter-proportions>

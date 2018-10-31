@@ -2,6 +2,7 @@ package com.xxyp.service;
 
 import com.xxyp.model.Works;
 import com.xxyp.model.WorksExample;
+import com.xxyp.model.WorksPhoto;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -21,6 +22,8 @@ public interface IWorksService {
     int insertSelective(Works record);
 
     List<Works> selectByExample(Works works);
+
+    List<Works> getHotWorks(List<WorksPhoto> works);
 
     Works selectByPrimaryKey(Long worksId);
 

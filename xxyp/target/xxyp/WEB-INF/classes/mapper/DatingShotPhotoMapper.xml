@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxyp.dao.DatingShotPhotoMapper">
+  <resultMap id="DatingShotResultMap" type="com.xxyp.model.DatingShotPhoto">
+    <id column="dating_shot_photo_id" jdbcType="BIGINT" property="datingShotPhotoId" />
+    <result column="dating_shot_id" jdbcType="BIGINT" property="datingShotId" />
+    <result column="dating_shot_photo" jdbcType="VARCHAR" property="datingShotPhoto" />
+    <result column="dating_shot_image_order" jdbcType="TINYINT" property="datingShotImageOrder" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    dating_shot_photo_id, dating_shot_id, dating_shot_photo, dating_shot_image_order, 
+    status
+  </sql>
+  <select id="selectByExample" parameterType="com.xxyp.model.DatingShotPhotoExample" resultMap="DatingShotResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from dating_shot_photo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="DatingShotResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from dating_shot_photo
+    where dating_shot_photo_id = #{datingShotPhotoId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from dating_shot_photo
+    where dating_shot_photo_id = #{datingShotPhotoId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.xxyp.model.DatingShotPhotoExample">
+    delete from dating_shot_photo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.xxyp.model.DatingShotPhoto">
+    insert into dating_shot_photo (dating_shot_photo_id, dating_shot_id, dating_shot_photo, 
+      dating_shot_image_order, status)
+    values (#{datingShotPhotoId,jdbcType=BIGINT}, #{datingShotId,jdbcType=BIGINT}, #{datingShotPhoto,jdbcType=VARCHAR}, 
+      #{datingShotImageOrder,jdbcType=TINYINT}, #{status,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxyp.model.DatingShotPhoto">
+    insert into dating_shot_photo
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="datingShotPhotoId != null">
+        dating_shot_photo_id,
+      </if>
+      <if test="datingShotId != null">
+        dating_shot_id,
+      </if>
+      <if test="datingShotPhoto != null">
+        dating_shot_photo,
+      </if>
+      <if test="datingShotImageOrder != null">
+        dating_shot_image_order,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="datingShotPhotoId != null">
+        #{datingShotPhotoId,jdbcType=BIGINT},
+      </if>
+      <if test="datingShotId != null">
+        #{datingShotId,jdbcType=BIGINT},
+      </if>
+      <if test="datingShotPhoto != null">
+        #{datingShotPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="datingShotImageOrder != null">
+        #{datingShotImageOrder,jdbcType=TINYINT},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.xxyp.model.DatingShotPhotoExample" resultType="java.lang.Integer">
+    select count(*) from dating_shot_photo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update dating_shot_photo
+    <set>
+      <if test="record.datingShotPhotoId != null">
+        dating_shot_photo_id = #{record.datingShotPhotoId,jdbcType=BIGINT},
+      </if>
+      <if test="record.datingShotId != null">
+        dating_shot_id = #{record.datingShotId,jdbcType=BIGINT},
+      </if>
+      <if test="record.datingShotPhoto != null">
+        dating_shot_photo = #{record.datingShotPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="record.datingShotImageOrder != null">
+        dating_shot_image_order = #{record.datingShotImageOrder,jdbcType=TINYINT},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=TINYINT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update dating_shot_photo
+    set dating_shot_photo_id = #{record.datingShotPhotoId,jdbcType=BIGINT},
+      dating_shot_id = #{record.datingShotId,jdbcType=BIGINT},
+      dating_shot_photo = #{record.datingShotPhoto,jdbcType=VARCHAR},
+      dating_shot_image_order = #{record.datingShotImageOrder,jdbcType=TINYINT},
+      status = #{record.status,jdbcType=TINYINT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xxyp.model.DatingShotPhoto">
+    update dating_shot_photo
+    <set>
+      <if test="datingShotId != null">
+        dating_shot_id = #{datingShotId,jdbcType=BIGINT},
+      </if>
+      <if test="datingShotPhoto != null">
+        dating_shot_photo = #{datingShotPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="datingShotImageOrder != null">
+        dating_shot_image_order = #{datingShotImageOrder,jdbcType=TINYINT},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=TINYINT},
+      </if>
+    </set>
+    where dating_shot_photo_id = #{datingShotPhotoId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xxyp.model.DatingShotPhoto">
+    update dating_shot_photo
+    set dating_shot_id = #{datingShotId,jdbcType=BIGINT},
+      dating_shot_photo = #{datingShotPhoto,jdbcType=VARCHAR},
+      dating_shot_image_order = #{datingShotImageOrder,jdbcType=TINYINT},
+      status = #{status,jdbcType=TINYINT}
+    where dating_shot_photo_id = #{datingShotPhotoId,jdbcType=BIGINT}
+  </update>
+
+</mapper>

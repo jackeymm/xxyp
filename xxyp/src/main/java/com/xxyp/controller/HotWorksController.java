@@ -4,6 +4,8 @@ import com.xxyp.common.BaseController;
 import com.xxyp.model.UserInfo;
 import com.xxyp.model.Works;
 import com.xxyp.model.WorksPhoto;
+import com.xxyp.service.IUserInfoService;
+import com.xxyp.service.IWorksPhotoService;
 import com.xxyp.service.IWorksService;
 import com.xxyp.utils.GsonUtil;
 import io.swagger.annotations.ApiOperation;
@@ -11,8 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -33,6 +34,12 @@ public class HotWorksController extends BaseController{
     @Autowired
     private IWorksService worksService;
 
+    @Autowired
+    private IWorksPhotoService worksPhotoService;
+
+    @Autowired
+    private IUserInfoService userInfoService;
+
     @RequestMapping(value = "getHotWorks", method = RequestMethod.GET)
     @ApiOperation(
             value = "获取热门作品接口",
@@ -44,10 +51,31 @@ public class HotWorksController extends BaseController{
             consumes = "application/json"
     )
     public void getHotWorks() {
+        List<WorksPhoto> hotWorkPhotos = worksPhotoService.getHotWorks();
+        logger.info("### hotWorkPhotos : "+GsonUtil.toJson(hotWorkPhotos));
         Works works = new Works();
-//        List<Works> resultList = worksService.selectByExample(works);
+        List<Works> worksList = worksService.getHotWorks(hotWorkPhotos);
+        List<Works> resultList = new ArrayList<Works>();
+        for(Works tempWorks : worksList){
+            for(WorksPhoto tempWorksPhoto : hotWorkPhotos){
+                if(tempWorks.getWorksId() == tempWorksPhoto.getWorksId()){
+                    if(StringUtils.isEmpty(tempWorks.getList()))
+                        tempWorks.setList(new ArrayList<WorksPhoto>());
+                    UserInfo userInfo = new UserInfo();
+                    userInfo.setUserId(tempWorks.getUserId());
+                    List<UserInfo> userInfos = userInfoService.selectByExample(userInfo);
+                    if(userInfos.size() > 0){
+                        tempWorks.setUserImage(userInfos.get(0).getUserImage());
+                        tempWorks.setUserName(userInfos.get(0).getUserName());
+                    }
+                    tempWorks.getList().add(tempWorksPhoto);
+                }
+            }
+            resultList.add(tempWorks);
+        }
         Map returnMap = new HashMap();
-        returnMap.put("hotWorks",initHotWorks());
+//        returnMap.put("hotWorks",initHotWorks());
+        returnMap.put("hotWorks",resultList);
         outputData(returnMap);
     }
 

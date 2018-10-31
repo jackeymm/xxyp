@@ -58,6 +58,8 @@ public class DatingShotServiceImpl implements IDatingShotService {
             criteria.andUserImageEqualTo(datingShot.getUserImage());
         if(!StringUtils.isEmpty(datingShot.getUserId()))
             criteria.andUserIdEqualTo(datingShot.getUserId());
+        if(!StringUtils.isEmpty(datingShot.getDatingUserId()))
+            criteria.andDatingUserIdEqualTo(datingShot.getDatingUserId());
         if(!StringUtils.isEmpty(datingShot.getUserName()))
             criteria.andUserNameEqualTo(datingShot.getUserName());
         if(!StringUtils.isEmpty(datingShot.getDatingShotIntroduction()))

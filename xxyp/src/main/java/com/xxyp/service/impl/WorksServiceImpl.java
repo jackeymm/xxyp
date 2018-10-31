@@ -3,6 +3,7 @@ package com.xxyp.service.impl;
 import com.xxyp.dao.WorksMapper;
 import com.xxyp.model.Works;
 import com.xxyp.model.WorksExample;
+import com.xxyp.model.WorksPhoto;
 import com.xxyp.service.IWorksService;
 import com.xxyp.utils.GsonUtil;
 import org.apache.ibatis.annotations.Param;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -53,6 +55,14 @@ public class WorksServiceImpl implements IWorksService {
         return worksMapper.selectByExample(example);
     }
 
+    public List<Works> getHotWorks(List<WorksPhoto> works){
+        WorksExample example = new WorksExample();
+        WorksExample.Criteria criteria = example.createCriteria();
+        assemblyHotWorksEqual2Criteria(criteria, works);
+        logger.info("### example : "+ GsonUtil.toJson(example));
+        return worksMapper.selectByExample(example);
+    }
+
     public Works selectByPrimaryKey(Long worksId){
         return worksMapper.selectByPrimaryKey(worksId);
     }
@@ -80,18 +90,28 @@ public class WorksServiceImpl implements IWorksService {
             criteria.andReleaseTimeEqualTo(works.getReleaseTime());
         if(!StringUtils.isEmpty(works.getStatus()))
             criteria.andStatusEqualTo(works.getStatus());
-        if(!StringUtils.isEmpty(works.getUserImage()))
-            criteria.andUserImageEqualTo(works.getUserImage());
         if(!StringUtils.isEmpty(works.getUserId()))
             criteria.andUserIdEqualTo(works.getUserId());
-        if(!StringUtils.isEmpty(works.getUserName()))
-            criteria.andUserNameEqualTo(works.getUserName());
         if(!StringUtils.isEmpty(works.getWorksTitle()))
             criteria.andWorksTitleEqualTo(works.getWorksTitle());
         if(!StringUtils.isEmpty(works.getWorksAddress()))
             criteria.andWorksIntroductionEqualTo(works.getWorksIntroduction());
         if(!StringUtils.isEmpty(works.getWorksId()))
             criteria.andWorksIdEqualTo(works.getWorksId());
+    }
+
+    private void assemblyHotWorksEqual2Criteria(WorksExample.Criteria criteria, List<WorksPhoto> worksPhoto){
+        logger.info("assemblyWorksEqual2Criteria -- worksPhoto : "+GsonUtil.toJson(worksPhoto));
+        List<Long> workIds = new ArrayList<Long>();
+        for (int i = 0; i < worksPhoto.size(); i++){
+            if(i>20)
+                break;
+            WorksPhoto tempWork = worksPhoto.get(i);
+            workIds.add(tempWork.getWorksId());
+        }
+        if(!StringUtils.isEmpty(workIds))
+        criteria.andWorksIdIn(workIds);
+        logger.info("### example : "+GsonUtil.toJson(criteria));
     }
 
 }

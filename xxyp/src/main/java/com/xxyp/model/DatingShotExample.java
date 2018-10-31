@@ -178,6 +178,10 @@ public class DatingShotExample {
             addCriterion("user_id =", value, "userId");
             return (Criteria) this;
         }
+        public Criteria andDatingUserIdEqualTo(Long value) {
+            addCriterion("dating_user_id =", value, "datingUserId");
+            return (Criteria) this;
+        }
 
         public Criteria andUserIdNotEqualTo(Long value) {
             addCriterion("user_id <>", value, "userId");

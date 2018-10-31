@@ -1,14 +1,19 @@
 package com.xxyp.controller;
 
 import com.xxyp.common.BaseController;
+import com.xxyp.input.CreateWorksInput;
+import com.xxyp.input.CreateWorksPhotoInput;
+import com.xxyp.model.UserInfo;
 import com.xxyp.model.Works;
 import com.xxyp.model.WorksPhoto;
+import com.xxyp.service.IUserInfoService;
 import com.xxyp.service.IWorksPhotoService;
 import com.xxyp.service.IWorksService;
 import com.xxyp.utils.GsonUtil;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -36,6 +41,9 @@ public class WorksController extends BaseController{
     @Autowired
     private IWorksPhotoService worksPhotoService;
 
+    @Autowired
+    private IUserInfoService userInfoService;
+
 
     @RequestMapping(value = "createWorks", method = RequestMethod.POST)
     @ApiOperation(
@@ -48,10 +56,16 @@ public class WorksController extends BaseController{
             consumes = "application/json"
     )
 
-    public void createWorks(@RequestBody Works works) {
+    public void createWorks(@RequestBody CreateWorksInput createWorksInput) {
+
+        Works works = new Works();
+        works.setWorksIntroduction(createWorksInput.getWorksIntroduction());
+        works.setUserId(createWorksInput.getUserId());
+        works.setWorksAddress(createWorksInput.getWorksAddress());
+        works.setWorksTitle(createWorksInput.getWorksTitle());
         works.setStatus(1);
-        works.setWorksId(null);
         works.setReleaseTime(System.currentTimeMillis());
+
         logger.info("### addWorks param : "+GsonUtil.toJson(works));
         int result = worksService.insert(works);
         logger.info("### addWorks result : "+result);
@@ -62,10 +76,14 @@ public class WorksController extends BaseController{
         Long worksId = list.get(list.size()-1).getWorksId();
         logger.info("### addWorks worksId : "+worksId);
 
-        for (WorksPhoto worksPhoto : works.getList()){
+
+
+        for (CreateWorksPhotoInput input : createWorksInput.getList()){
+            WorksPhoto worksPhoto = new WorksPhoto();
+            worksPhoto.setWorksPhoto(input.getWorksPhoto());
+            worksPhoto.setWorksImageOrder(input.getWorksImageOrder());
             worksPhoto.setWorksId(worksId);
             worksPhoto.setStatus(1);
-            worksPhoto.setWorksPhotoId(null);
             int worksPhotoResult = worksPhotoService.insert(worksPhoto);
             logger.info("### addWorks : addWorksPhoto : "+worksPhotoResult);
         }
@@ -116,6 +134,13 @@ public class WorksController extends BaseController{
             WorksPhoto worksPhoto = new WorksPhoto();
             worksPhoto.setWorksId(works1.getWorksId());
             List<WorksPhoto> worksPhotoList = worksPhotoService.selectByExample(worksPhoto);
+            UserInfo userInfo = new UserInfo();
+            userInfo.setUserId(works1.getUserId());
+            List<UserInfo> userInfos = userInfoService.selectByExample(userInfo);
+            if(userInfos.size() > 0){
+                works1.setUserName(userInfos.get(0).getUserName());
+                works1.setUserImage(userInfos.get(0).getUserImage());
+            }
             works1.setList(worksPhotoList);
             resultList.set(i,works1);
         }

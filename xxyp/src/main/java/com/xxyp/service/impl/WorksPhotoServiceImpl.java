@@ -36,6 +36,16 @@ public class WorksPhotoServiceImpl implements IWorksPhotoService{
         return worksPhotoMapper.selectByExample(example);
     }
 
+    public List<WorksPhoto> getHotWorks() {
+        WorksPhotoExample example = new WorksPhotoExample();
+//        WorksPhotoExample.Criteria criteria = example.createCriteria();
+//        assemblyHotWorksPhotoEqual2Criteria(criteria, worksPhoto);
+        example.setOrderByClause("works_image_like_count");
+
+        logger.info("### getHotWorks example : "+ GsonUtil.toJson(example));
+        return worksPhotoMapper.getHotWorks(example);
+    }
+
     public int updateByPrimaryKey(WorksPhoto record) {
         return worksPhotoMapper.updateByPrimaryKey(record);
     }
@@ -50,6 +60,10 @@ public class WorksPhotoServiceImpl implements IWorksPhotoService{
             criteria.andWorksIdEqualTo(worksPhoto.getWorksId());
         if(!StringUtils.isEmpty(worksPhoto.getWorksPhotoId()))
             criteria.andWorksPhotoIdEqualTo(worksPhoto.getWorksPhotoId());
+    }
+
+    private void assemblyHotWorksPhotoEqual2Criteria(WorksPhotoExample.Criteria criteria, WorksPhoto worksPhoto){
+
     }
 
 }

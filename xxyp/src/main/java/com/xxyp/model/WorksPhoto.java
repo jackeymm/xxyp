@@ -9,11 +9,11 @@ public class WorksPhoto {
 
     private Integer worksImageOrder;
 
-    private Long worksImageLikeCount;
+    private Long worksImageLikeCount=0L;
 
-    private Long worksImageCommentCount;
+    private Long worksImageCommentCount=0L;
 
-    private Integer status;
+    private Integer status = 1;
 
     public Long getWorksPhotoId() {
         return worksPhotoId;

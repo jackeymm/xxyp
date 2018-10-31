@@ -103,16 +103,6 @@ public class SwaggerConfig {
                         .build()
         );
 
-        listParameter.add(
-                new ParameterBuilder()
-                        .name("X-XXYP-User-Agent")
-                        .description("User Agent")
-                        .parameterType("header")
-                        .required(true)
-                        .modelRef(new ModelRef("string"))
-                        .build()
-        );
-
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()

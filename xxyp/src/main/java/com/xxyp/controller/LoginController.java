@@ -1,12 +1,15 @@
 package com.xxyp.controller;
 
 import com.xxyp.common.BaseController;
-import com.xxyp.common.BaseException;
 import com.xxyp.input.LoginUserInfoInput;
+import com.xxyp.model.TokenEntity;
 import com.xxyp.model.UserInfo;
 import com.xxyp.service.IUserInfoService;
 import com.xxyp.utils.GsonUtil;
+import com.xxyp.utils.ShiroUtil;
 import io.swagger.annotations.ApiOperation;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -37,7 +40,8 @@ public class LoginController extends BaseController{
             value = "用户登录接口",
             notes = "用户登录信息.</br>"+
                     "Method: POST</br>" +
-                    "Error Code: </br>"
+                    "Error Code:10000-->用户不存在 </br>"+
+                    "Error Code:10001-->用户认证信息不正确</br>"
                     ,
             response = Map.class,
             consumes = "application/json"
@@ -46,12 +50,19 @@ public class LoginController extends BaseController{
         logger.info("用户登录信息入参====》"+ GsonUtil.toJson(loginUserInfoInput));
         UserInfo userInfo = new UserInfo();
         BeanUtils.copyProperties(loginUserInfoInput, userInfo);
+        ShiroUtil shiroUtil = new ShiroUtil();
+        TokenEntity tokenEntity = shiroUtil.loginUser(userInfo);
+        if (!"SUCC".equals(tokenEntity.getIsSuccess())) {
+            outputException(10001,"用户认证信息不正确");
+            return;
+        }
         List<UserInfo> resultUserInfo = userInfoService.selectByExample(userInfo);
+        logger.info("resultUserInfo : "+ GsonUtil.toJson(resultUserInfo));
         Map resultMap = new HashMap();
-        if(resultUserInfo.size() > 1) {
-            resultMap.put("status", "success");
-            resultMap.put("token", "tokenTemp");
+        if(resultUserInfo.size() > 0) {
+            resultMap.put("token", tokenEntity.getToken());
             resultMap.put("userInfo", resultUserInfo.get(resultUserInfo.size() - 1));
+            logger.info("用户登录信息出参====》"+GsonUtil.toJson(resultMap));
             outputData(resultMap);
         }else{
             outputException(10000,"用户不存在");
@@ -69,9 +80,21 @@ public class LoginController extends BaseController{
             response = void.class,
             consumes = "application/json"
     )
-    public void selectUserInfo(@ModelAttribute UserInfo userInfo) {
+    public void logout(@ModelAttribute UserInfo userInfo) {
         logger.info("用户登出入参====》"+ GsonUtil.toJson(userInfo));
+        Subject subject = SecurityUtils.getSubject();
+        if (subject != null) {
+            try{
+                subject.logout();
+            }catch(Exception ex){
+            }
+        }
         outputData();
     }
 
+
+
 }
+
+
+

@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel
 public class UserInfo implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
-    @ApiModelProperty(required = false,hidden=false, value = "用户Id")
+    @ApiModelProperty(required = false,hidden=false, value = "用户Ids,用【,】分割")
     private Long userId;
     @ApiModelProperty(required = false,hidden=false, value = "用户昵称")
     private String userName;

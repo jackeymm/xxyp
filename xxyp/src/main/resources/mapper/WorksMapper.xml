@@ -4,8 +4,6 @@
   <resultMap id="WorksResultMap" type="com.xxyp.model.Works">
   <id column="works_id" jdbcType="BIGINT" property="worksId" />
   <result column="user_id" jdbcType="BIGINT" property="userId" />
-  <result column="user_name" jdbcType="VARCHAR" property="userName" />
-  <result column="user_image" jdbcType="VARCHAR" property="userImage" />
   <result column="works_address" jdbcType="VARCHAR" property="worksAddress" />
   <result column="release_time" jdbcType="BIGINT" property="releaseTime" />
   <result column="status" jdbcType="TINYINT" property="status" />
@@ -71,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    works_id, user_id, user_name, user_image, works_address, release_time, status, works_title, 
+    works_id, user_id,  works_address, release_time, status, works_title,
     works_introduction
   </sql>
   <select id="selectByExample" parameterType="com.xxyp.model.WorksExample" resultMap="WorksResultMap">
@@ -105,12 +103,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.xxyp.model.Works">
-    insert into works (works_id, user_id, user_name, 
-      user_image, works_address, release_time, 
+    insert into works (works_id, user_id, works_address, release_time,
       status, works_title, works_introduction
       )
-    values (#{worksId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{userName,jdbcType=VARCHAR}, 
-      #{userImage,jdbcType=VARCHAR}, #{worksAddress,jdbcType=VARCHAR}, #{releaseTime,jdbcType=BIGINT}, 
+    values (#{worksId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{worksAddress,jdbcType=VARCHAR}, #{releaseTime,jdbcType=BIGINT},
       #{status,jdbcType=TINYINT}, #{worksTitle,jdbcType=VARCHAR}, #{worksIntroduction,jdbcType=VARCHAR}
       )
   </insert>
@@ -122,12 +118,6 @@
       </if>
       <if test="userId != null">
         user_id,
-      </if>
-      <if test="userName != null">
-        user_name,
-      </if>
-      <if test="userImage != null">
-        user_image,
       </if>
       <if test="worksAddress != null">
         works_address,
@@ -151,12 +141,6 @@
       </if>
       <if test="userId != null">
         #{userId,jdbcType=BIGINT},
-      </if>
-      <if test="userName != null">
-        #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="userImage != null">
-        #{userImage,jdbcType=VARCHAR},
       </if>
       <if test="worksAddress != null">
         #{worksAddress,jdbcType=VARCHAR},
@@ -190,12 +174,6 @@
       <if test="record.userId != null">
         user_id = #{record.userId,jdbcType=BIGINT},
       </if>
-      <if test="record.userName != null">
-        user_name = #{record.userName,jdbcType=VARCHAR},
-      </if>
-      <if test="record.userImage != null">
-        user_image = #{record.userImage,jdbcType=VARCHAR},
-      </if>
       <if test="record.worksAddress != null">
         works_address = #{record.worksAddress,jdbcType=VARCHAR},
       </if>
@@ -220,8 +198,6 @@
     update works
     set works_id = #{record.worksId,jdbcType=BIGINT},
       user_id = #{record.userId,jdbcType=BIGINT},
-      user_name = #{record.userName,jdbcType=VARCHAR},
-      user_image = #{record.userImage,jdbcType=VARCHAR},
       works_address = #{record.worksAddress,jdbcType=VARCHAR},
       release_time = #{record.releaseTime,jdbcType=BIGINT},
       status = #{record.status,jdbcType=TINYINT},
@@ -236,12 +212,6 @@
     <set>
       <if test="userId != null">
         user_id = #{userId,jdbcType=BIGINT},
-      </if>
-      <if test="userName != null">
-        user_name = #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="userImage != null">
-        user_image = #{userImage,jdbcType=VARCHAR},
       </if>
       <if test="worksAddress != null">
         works_address = #{worksAddress,jdbcType=VARCHAR},
@@ -264,8 +234,6 @@
   <update id="updateByPrimaryKey" parameterType="com.xxyp.model.Works">
     update works
     set user_id = #{userId,jdbcType=BIGINT},
-      user_name = #{userName,jdbcType=VARCHAR},
-      user_image = #{userImage,jdbcType=VARCHAR},
       works_address = #{worksAddress,jdbcType=VARCHAR},
       release_time = #{releaseTime,jdbcType=BIGINT},
       status = #{status,jdbcType=TINYINT},
@@ -273,6 +241,5 @@
       works_introduction = #{worksIntroduction,jdbcType=VARCHAR}
     where works_id = #{worksId,jdbcType=BIGINT}
   </update>
-
 
 </mapper>
