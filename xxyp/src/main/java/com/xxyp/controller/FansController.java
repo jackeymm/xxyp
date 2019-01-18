@@ -53,6 +53,11 @@ public class FansController extends BaseController{
     public void createFans(@RequestBody CreateFansInput createFansInput) {
         Fans fans = new Fans();
         BeanUtils.copyProperties(createFansInput, fans);
+        List<Fans> hasFans = fansService.selectByExample(fans);
+        if(hasFans.size() > 0){
+            outputData();
+            return;
+        }
         fans.setStatus(1);
         int result = fansService.insert(fans);
         logger.info("createFans result : "+result);

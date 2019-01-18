@@ -14,6 +14,7 @@ import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import sun.security.util.Cache;
 
 /**
  * Created by jackeymm on 2018/3/28.
@@ -21,8 +22,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ShiroUtil {
     private static Logger logger = LoggerFactory.getLogger(ShiroUtil.class);
 
-    @Autowired
-    private ICacheManager cacheManager;
+    private static Cache cache = Cache.newHardMemoryCache(0, CacheConstant.cacheRefeshTime);
+
+//    @Autowired
+//    private ICacheManager cacheManager;
 
 
     public TokenEntity loginUser(UserInfo user) {
@@ -44,7 +47,9 @@ public class ShiroUtil {
         try {
             SecurityUtils.getSubject().login(token);
             tokenEntity.setToken(SecurityUtils.getSubject().getSession().getId().toString());
-            cacheManager.putCache(SecurityUtils.getSubject().getSession().getId().toString(), user.getUserId(), CacheConstant.cacheRefeshTime);
+            cache.put(SecurityUtils.getSubject().getSession().getId().toString(), user.getUserId());
+
+//            cacheManager.putCache(SecurityUtils.getSubject().getSession().getId().toString(), user.getUserId(), CacheConstant.cacheRefeshTime);
         } catch (UnknownAccountException ex) {
             tokenEntity.setIsSuccess("用户不存在或者密码错误！");
         } catch (IncorrectCredentialsException ex) {
@@ -70,13 +75,11 @@ public class ShiroUtil {
     public TokenEntity authorization(String token) {
         TokenEntity tokenEntity = new TokenEntity();
         try {
-            if (!cacheManager.isTimeOut(token)) {
-                EntityCache cacheEntity = cacheManager.getCacheByKey(token);
-                cacheManager.refreshTimeOut(token, cacheEntity.getDatas());
-
+            Long userId = (Long) cache.get(token);
+            if (null != userId) {
                 //设置认证成功信息
                 tokenEntity.setToken(token);
-                tokenEntity.setUserId((Long)cacheEntity.getDatas());
+                tokenEntity.setUserId(userId);
                 tokenEntity.setIsSuccess("SUCC");
             } else {
                 tokenEntity.setIsSuccess("Fail");

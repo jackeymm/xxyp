@@ -33,6 +33,7 @@ public class DatingShotPhotoServiceImpl implements IDatingShotPhotoService {
         DatingShotPhotoExample example = new DatingShotPhotoExample();
         DatingShotPhotoExample.Criteria criteria = example.createCriteria();
         assemblyDatingShotEqual2Criteria(criteria, datingShotPhoto);
+        example.setOrderByClause("dating_shot_photo_id desc");
         logger.info("### example : "+ GsonUtil.toJson(example));
         return datingShotPhotoMapper.selectByExample(example);
     }

@@ -12,6 +12,7 @@
     <result column="mobile" property="mobile" jdbcType="VARCHAR" />
     <result column="email" property="email" jdbcType="VARCHAR" />
     <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="gender" property="gender" jdbcType="TINYINT" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -73,7 +74,7 @@
   </sql>
   <sql id="Base_Column_List" >
     user_id, user_name, user_image, user_introduction, user_identity, user_source, user_source_id, 
-    mobile, email, status
+    mobile, email, status, gender
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.xxyp.model.UserInfoExample" >
     select
@@ -109,11 +110,11 @@
     insert into user_info ( user_name, user_image,
       user_introduction, user_identity, user_source, 
       user_source_id, mobile, email, 
-      status)
+      status,gender)
     values ( #{userName,jdbcType=VARCHAR}, #{userImage,jdbcType=VARCHAR},
       #{userIntroduction,jdbcType=VARCHAR}, #{userIdentity,jdbcType=TINYINT}, #{userSource,jdbcType=TINYINT}, 
       #{userSourceId,jdbcType=BIGINT}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
-      #{status,jdbcType=TINYINT})
+      #{status,jdbcType=TINYINT},#{gender,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="com.xxyp.model.UserInfo" >
     insert into user_info
@@ -272,6 +273,9 @@
       <if test="status != null" >
         status = #{status,jdbcType=TINYINT},
       </if>
+      <if test="gender != null" >
+        gender = #{gender,jdbcType=TINYINT},
+      </if>
     </set>
     where user_id = #{userId,jdbcType=BIGINT}
   </update>
@@ -285,7 +289,8 @@
       user_source_id = #{userSourceId,jdbcType=BIGINT},
       mobile = #{mobile,jdbcType=VARCHAR},
       email = #{email,jdbcType=VARCHAR},
-      status = #{status,jdbcType=TINYINT}
+      status = #{status,jdbcType=TINYINT},
+      gender = #{gender,jdbcType=TINYINT}
     where user_id = #{userId,jdbcType=BIGINT}
   </update>
 </mapper>

@@ -102,6 +102,9 @@ public class UserInfoServiceImpl implements IUserInfoService {
         if(!StringUtils.isEmpty(userInfo.getUserSource())){
             criteria.andUserSourceEqualTo(userInfo.getUserSource());
         }
+        if(!StringUtils.isEmpty(userInfo.getGender())){
+            criteria.andUserGenderEqualTo(userInfo.getGender());
+        }
         logger.info("### example : "+GsonUtil.toJson(criteria));
 
     }

@@ -40,7 +40,7 @@ public class OurRealmImpl extends AuthorizingRealm {
             userInfo.setUserSourceId(userSourceId);
             List<UserInfo> userResult = userInfoService.selectByExample(userInfo);
             if (!CollectionUtils.isEmpty(userResult)) {
-                return new SimpleAuthenticationInfo(username, userResult.get(0).getUserId(), getName());
+                return new SimpleAuthenticationInfo(username, userResult.get(0).getUserSourceId(), getName());
             }
             return null;
         }

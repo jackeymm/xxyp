@@ -59,6 +59,16 @@ public class UserInfoController extends BaseController{
         BeanUtils.copyProperties(createUserInfoInput, userInfo);
         userInfo.setStatus(1);
         userInfo.setUserId(null);
+
+        List<UserInfo> hasUser = userInfoService.selectByExample(userInfo);
+        Map resultMap = new HashMap();
+        if(hasUser.size() > 0){
+            ShiroUtil shiroUtil = new ShiroUtil();
+            resultMap.put("userId", hasUser.get(0).getUserId());
+            TokenEntity tokenEntity = shiroUtil.loginUser(userInfo);
+            resultMap.put("token", tokenEntity.getToken());
+            outputData(resultMap);
+        }
         logger.info("增加用户信息入参====》"+ GsonUtil.toJson(userInfo));
         int result = userInfoService.insert(userInfo);
         ShiroUtil shiroUtil = new ShiroUtil();
@@ -67,7 +77,6 @@ public class UserInfoController extends BaseController{
         List<UserInfo> list = userInfoService.selectByExample(userInfo);
         logger.info("result : "+result);
         logger.info("userInfo : "+GsonUtil.toJson(list));
-        Map resultMap = new HashMap();
         resultMap.put("userId", list.get(list.size()-1).getUserId());
         resultMap.put("token", tokenEntity.getToken());
 
@@ -121,7 +130,7 @@ public class UserInfoController extends BaseController{
     )
     public void updateCommonInfo(@RequestBody UserInfo userInfo) {
         logger.info("修改用户信息入参====》"+ GsonUtil.toJson(userInfo));
-        int result = userInfoService.updateByPrimaryKey(userInfo);
+        int result = userInfoService.updateByPrimaryKeySelective(userInfo);
         outputData(result);
     }
 

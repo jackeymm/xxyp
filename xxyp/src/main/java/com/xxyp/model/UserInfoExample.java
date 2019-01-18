@@ -754,6 +754,13 @@ public class UserInfoExample implements java.io.Serializable {
             addCriterion("status not between", value1, value2, "status");
             return (Criteria) this;
         }
+
+        public Criteria andUserGenderEqualTo(Integer gender) {
+            addCriterion("gender =", gender, "gender");
+            return (Criteria) this;
+        }
+
+
     }
 
     public static class Criteria extends GeneratedCriteria {

@@ -1,6 +1,7 @@
 package com.xxyp.controller;
 
 import com.xxyp.common.BaseController;
+import com.xxyp.input.GetUserFansInput;
 import com.xxyp.model.*;
 import com.xxyp.service.IFansService;
 import com.xxyp.service.ILikesService;
@@ -56,6 +57,34 @@ public class LikesAndFollowsController extends BaseController{
         Map map = new HashMap();
         map.put("fansCount",fansCounts);
         map.put("followCount",followsCounts);
+
+        outputData(map);
+    }
+
+
+    @RequestMapping(value = "getUserHasFansAndFollow", method = RequestMethod.GET)
+    @ApiOperation(
+            value = "获取关注/粉丝人数接口",
+            notes = "获取关注/粉丝人数.</br>"+
+                    "Method: GET</br>" +
+                    "Error Code: </br>"
+            ,
+            response = Map.class,
+            consumes = "application/json"
+    )
+    public void getUserHasFansAndFollow(@ModelAttribute GetUserFansInput getUserFansInput) {
+        Fans fans = new Fans();
+
+        fans.setToUserId(getUserFansInput.getMyUserId());
+        fans.setFromUserId(getUserFansInput.getOtherUserId());
+        int fansCounts = fansService.selectFansCountByExample(fans);
+        Fans follows = new Fans();
+        follows.setToUserId(getUserFansInput.getOtherUserId());
+        follows.setFromUserId(getUserFansInput.getMyUserId());
+        int followsCounts = fansService.selectFansCountByExample(follows);
+        Map map = new HashMap();
+        map.put("hasFans",fansCounts);
+        map.put("hasFollow",followsCounts);
 
         outputData(map);
     }

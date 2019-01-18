@@ -26,6 +26,8 @@ public class UserInfo implements java.io.Serializable {
     private String email;
     @ApiModelProperty(required = false,hidden=false, value = "用户状态")
     private Integer status = 1;
+    @ApiModelProperty(required = false,hidden=false, value = "用户性别")
+    private Integer gender;
 
     public Long getUserId() {
         return userId;
@@ -105,5 +107,13 @@ public class UserInfo implements java.io.Serializable {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
     }
 }

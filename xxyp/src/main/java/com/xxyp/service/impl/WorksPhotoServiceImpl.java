@@ -32,6 +32,7 @@ public class WorksPhotoServiceImpl implements IWorksPhotoService{
         WorksPhotoExample example = new WorksPhotoExample();
         WorksPhotoExample.Criteria criteria = example.createCriteria();
         assemblyWorksPhotoEqual2Criteria(criteria, worksPhoto);
+        example.setOrderByClause("works_id desc");
         logger.info("### example : "+ GsonUtil.toJson(example));
         return worksPhotoMapper.selectByExample(example);
     }

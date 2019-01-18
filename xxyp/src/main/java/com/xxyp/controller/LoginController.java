@@ -53,7 +53,7 @@ public class LoginController extends BaseController{
         ShiroUtil shiroUtil = new ShiroUtil();
         TokenEntity tokenEntity = shiroUtil.loginUser(userInfo);
         if (!"SUCC".equals(tokenEntity.getIsSuccess())) {
-            outputException(10001,"用户认证信息不正确");
+            outputException(10000,"用户认证信息不正确");
             return;
         }
         List<UserInfo> resultUserInfo = userInfoService.selectByExample(userInfo);

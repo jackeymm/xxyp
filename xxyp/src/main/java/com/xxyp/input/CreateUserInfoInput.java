@@ -25,6 +25,8 @@ public class CreateUserInfoInput implements java.io.Serializable {
         private String mobile;
         @ApiModelProperty(required = false,hidden=false, value = "邮箱")
         private String email;
+        @ApiModelProperty(required = false,hidden=false, value = "性别")
+        private Integer gender;
 
     public String getUserName() {
         return userName;
@@ -88,5 +90,13 @@ public class CreateUserInfoInput implements java.io.Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
     }
 }
