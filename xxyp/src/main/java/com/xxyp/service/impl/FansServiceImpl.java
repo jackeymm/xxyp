@@ -3,15 +3,11 @@ package com.xxyp.service.impl;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.xxyp.dao.FansMapper;
-import com.xxyp.dao.UserInfoMapper;
 import com.xxyp.model.Fans;
 import com.xxyp.model.FansExample;
-import com.xxyp.model.UserInfo;
-import com.xxyp.model.UserInfoExample;
 import com.xxyp.service.IFansService;
-import com.xxyp.service.IUserInfoService;
 import com.xxyp.utils.GsonUtil;
-import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Options;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +31,10 @@ public class FansServiceImpl implements IFansService {
     @Autowired
     private FansMapper fansMapper;
 
-
+    @Options(useGeneratedKeys=true, keyProperty="fansId", keyColumn="fans_id")
     public int insert(Fans record) {
-        return fansMapper.insert(record);
+        fansMapper.insert(record);
+        return record.getFansId() == null ? 0 : record.getFansId().intValue();
     }
 
 
@@ -118,10 +115,13 @@ public class FansServiceImpl implements IFansService {
         return fansList.size();
     }
 
+    public int updateByUsers(Fans fans){
+        return fansMapper.updateByUsers(fans);
+    }
 
 
-    public int updateByPrimaryKey(Fans record) {
-        return fansMapper.updateByPrimaryKey(record);
+    public int deleteFans(Fans record) {
+        return fansMapper.deleteFans(record);
     }
 
 

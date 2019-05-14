@@ -15,5 +15,8 @@ public interface IFansService {
 
     int selectFansCountByExample(Fans fans);
 
-    int updateByPrimaryKey(Fans record);
+    int deleteFans(Fans record);
+
+    int updateByUsers(Fans fans);
+
 }

@@ -13,6 +13,7 @@
     <result column="email" property="email" jdbcType="VARCHAR" />
     <result column="status" property="status" jdbcType="TINYINT" />
     <result column="gender" property="gender" jdbcType="TINYINT" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -74,7 +75,7 @@
   </sql>
   <sql id="Base_Column_List" >
     user_id, user_name, user_image, user_introduction, user_identity, user_source, user_source_id, 
-    mobile, email, status, gender
+    mobile, email, status, gender, address
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.xxyp.model.UserInfoExample" >
     select
@@ -110,11 +111,11 @@
     insert into user_info ( user_name, user_image,
       user_introduction, user_identity, user_source, 
       user_source_id, mobile, email, 
-      status,gender)
+      status,gender,address )
     values ( #{userName,jdbcType=VARCHAR}, #{userImage,jdbcType=VARCHAR},
       #{userIntroduction,jdbcType=VARCHAR}, #{userIdentity,jdbcType=TINYINT}, #{userSource,jdbcType=TINYINT}, 
       #{userSourceId,jdbcType=BIGINT}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
-      #{status,jdbcType=TINYINT},#{gender,jdbcType=TINYINT})
+      #{status,jdbcType=TINYINT},#{gender,jdbcType=TINYINT},#{address,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.xxyp.model.UserInfo" >
     insert into user_info
@@ -149,6 +150,9 @@
       <if test="status != null" >
         status,
       </if>
+      <if test="address != null" >
+        address,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="userId != null" >
@@ -180,6 +184,9 @@
       </if>
       <if test="status != null" >
         #{status,jdbcType=TINYINT},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -221,6 +228,9 @@
       </if>
       <if test="record.status != null" >
         status = #{record.status,jdbcType=TINYINT},
+      </if>
+      <if test="record.address != null" >
+        address = #{record.address,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -275,6 +285,9 @@
       </if>
       <if test="gender != null" >
         gender = #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
       </if>
     </set>
     where user_id = #{userId,jdbcType=BIGINT}

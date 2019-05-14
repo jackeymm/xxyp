@@ -13,5 +13,8 @@ public interface IDatingShotService {
 
     List<DatingShot> selectByExample(DatingShot datingShot);
 
+    DatingShot selectByPrimaryKey(Long datingShotId);
+
     int updateByPrimaryKey(DatingShot datingShot);
+
 }

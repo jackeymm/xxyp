@@ -53,7 +53,6 @@ public class HotWorksController extends BaseController{
     public void getHotWorks() {
         List<WorksPhoto> hotWorkPhotos = worksPhotoService.getHotWorks();
         logger.info("### hotWorkPhotos : "+GsonUtil.toJson(hotWorkPhotos));
-        Works works = new Works();
         List<Works> worksList = worksService.getHotWorks(hotWorkPhotos);
         List<Works> resultList = new ArrayList<Works>();
         for(Works tempWorks : worksList){

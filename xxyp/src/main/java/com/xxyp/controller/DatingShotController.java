@@ -1,6 +1,7 @@
 package com.xxyp.controller;
 
 import com.xxyp.common.BaseController;
+import com.xxyp.common.CodeMsg;
 import com.xxyp.input.*;
 import com.xxyp.model.DatingShot;
 import com.xxyp.model.DatingShotPhoto;
@@ -14,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.CollectionUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -92,29 +94,49 @@ public class DatingShotController extends BaseController{
             value = "修改约拍接口",
             notes = "修改约拍信息.</br>"+
                     "Method: POST</br>" +
-                    "Error Code: </br>"
+                    "Error Code: </br>" +
+                    "Status: 0 del ; 1 created ; 2 dated ; 3 done</br>"
             ,
             response = List.class,
             consumes = "application/json"
     )
 
     public void updateDatingShot(@RequestBody UpdateDatingShotInput input) {
+        if(null == input.getDatingShotId()){
+            outputException(CodeMsg.PARAM_ERROR.getCode(), CodeMsg.PARAM_ERROR.getMsg());
+            return;
+        }
+        DatingShot datingShotResult = datingShotService.selectByPrimaryKey(input.getDatingShotId());
+        logger.info("query datingShotResult : ", GsonUtil.toJson(datingShotResult));
         DatingShot datingShot = new DatingShot();
         BeanUtils.copyProperties(input, datingShot);
         logger.info("### updateDatingShot param : "+GsonUtil.toJson(datingShot));
+        if(StringUtils.isEmpty(input.getUserId()) || input.getUserId() != datingShotResult.getUserId()){
+            outputException(CodeMsg.USERID_WRONG_ERROR.getCode(), CodeMsg.USERID_WRONG_ERROR.getMsg());
+            return;
+        }
+
         if(StringUtils.isEmpty(datingShot.getStatus())){
             datingShot.setStatus(1);
+        }else if (1 == datingShot.getStatus()){
+            datingShot.setDatingUserId(0L);
+        }else if (2 == datingShot.getStatus()){
+            if(null != datingShotResult && datingShotResult.getStatus() == 2 && datingShotResult.getDatingUserId() > 0){
+                outputException(CodeMsg.DATED_ERROR.getCode(), CodeMsg.DATED_ERROR.getMsg());
+                return;
+            }
         }
         datingShot.setUserId(null);
         datingShot.setReleaseTime(System.currentTimeMillis());
         int result = datingShotService.updateByPrimaryKey(datingShot);
         logger.info("### updateDatingShot result : "+result);
-
-        for (UpdateDatingShotPhotoInput datingShotPhotoInput : input.getDatingShotImages()){
-            DatingShotPhoto datingShotPhoto  = new DatingShotPhoto();
-            BeanUtils.copyProperties(datingShotPhotoInput, datingShotPhoto);
-            int datingShotPhotoResult = datingShotPhotoService.updateByPrimaryKey(datingShotPhoto);
-            logger.info("### updateWorks : updateWorksPhoto : "+datingShotPhotoResult);
+        if(null != input.getDatingShotImages()){
+            for (UpdateDatingShotPhotoInput datingShotPhotoInput : input.getDatingShotImages()){
+                DatingShotPhoto datingShotPhoto  = new DatingShotPhoto();
+                BeanUtils.copyProperties(datingShotPhotoInput, datingShotPhoto);
+                int datingShotPhotoResult = datingShotPhotoService.updateByPrimaryKey(datingShotPhoto);
+                logger.info("### updateWorks : updateWorksPhoto : "+datingShotPhotoResult);
+            }
         }
         outputData();
     }

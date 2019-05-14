@@ -88,6 +88,9 @@
     <if test="orderByClause != null" >
       order by ${orderByClause}
     </if>
+    <if test="limitByClause != null" >
+      limit ${limitByClause}
+    </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="DatingShotResultMap" parameterType="java.lang.Long" >
     select 
@@ -265,10 +268,11 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xxyp.model.DatingShot" >
     update dating_shot
-    set
+    <set>
     <if test="userId != null" >
       user_id = #{userId,jdbcType=BIGINT},
     </if>
+
     <if test="datingUserId != null" >
       dating_user_id = #{datingUserId,jdbcType=BIGINT},
     </if>
@@ -291,8 +295,9 @@
       status = #{status,jdbcType=TINYINT},
     </if>
     <if test="datingShotIntroduction != null" >
-      dating_shot_introduction = #{datingShotIntroduction,jdbcType=VARCHAR}
+      dating_shot_introduction = #{datingShotIntroduction,jdbcType=VARCHAR},
     </if>
+    </set>
     where dating_shot_id = #{datingShotId,jdbcType=BIGINT}
   </update>
 </mapper>

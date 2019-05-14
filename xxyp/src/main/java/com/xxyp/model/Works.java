@@ -2,7 +2,7 @@ package com.xxyp.model;
 
 import java.util.List;
 
-public class Works {
+public class Works extends PageEntity{
     private Long worksId;
 
     private Long userId;

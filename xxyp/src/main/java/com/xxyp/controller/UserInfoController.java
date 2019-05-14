@@ -59,6 +59,9 @@ public class UserInfoController extends BaseController{
         BeanUtils.copyProperties(createUserInfoInput, userInfo);
         userInfo.setStatus(1);
         userInfo.setUserId(null);
+        if(StringUtils.isEmpty(userInfo.getAddress())){
+            userInfo.setAddress("");
+        }
 
         List<UserInfo> hasUser = userInfoService.selectByExample(userInfo);
         Map resultMap = new HashMap();

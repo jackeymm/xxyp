@@ -1,6 +1,6 @@
 package com.xxyp.model;
 
-public class DatingShotPhoto {
+public class DatingShotPhoto extends PageEntity {
     private Long datingShotPhotoId;
 
     private Long datingShotId;

@@ -27,4 +27,9 @@ public interface FansMapper {
     int updateByPrimaryKeySelective(Fans record);
 
     int updateByPrimaryKey(Fans record);
+
+    int updateByUsers(Fans record);
+
+    int deleteFans(Fans record);
+
 }

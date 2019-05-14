@@ -5,6 +5,15 @@ import java.util.List;
 
 public class DatingShotExample {
     protected String orderByClause;
+    private String limitByClause;
+
+    public String getLimitByClause() {
+        return limitByClause;
+    }
+
+    public void setLimitByClause(String limitByClause) {
+        this.limitByClause = limitByClause;
+    }
 
     protected boolean distinct;
 

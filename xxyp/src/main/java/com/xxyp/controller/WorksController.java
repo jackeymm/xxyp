@@ -149,6 +149,52 @@ public class WorksController extends BaseController{
         outputData(returnMap);
     }
 
+    @RequestMapping(value = "getWorkPhotos", method = RequestMethod.GET)
+    @ApiOperation(
+            value = "获取作品照片接口",
+            notes = "获取作品照片信息.</br>"+
+                    "Method: GET</br>" +
+                    "Error Code: </br>"
+            ,
+            response = List.class,
+            consumes = "application/json"
+    )
+    public void getWorkPhotos(@ModelAttribute Works works) {
+        List<Works> workList = worksService.selectByExample(works);
+        List<WorksPhoto> resultList = new ArrayList<>();
+        for (int i = 0; i < workList.size(); i++){
+            Works works1 = workList.get(i);
+            WorksPhoto worksPhoto = new WorksPhoto();
+            worksPhoto.setWorksId(works1.getWorksId());
+            List<WorksPhoto> worksPhotoList = worksPhotoService.selectByExample(worksPhoto);
+            UserInfo userInfo = new UserInfo();
+            userInfo.setUserId(works1.getUserId());
+//            List<UserInfo> userInfos = userInfoService.selectByExample(userInfo);
+//            if(userInfos.size() > 0){
+//                works1.setUserName(userInfos.get(0).getUserName());
+//                works1.setUserImage(userInfos.get(0).getUserImage());
+//            }
+//            works1.setList(worksPhotoList);
+//            resultList.set(i,works1);
+            resultList.addAll(worksPhotoList);
+        }
+        Map returnMap = new HashMap();
+        Integer pageStarg = works.getPageIndex() * works.getPageSize();
+        Integer pageEnd = works.getPageIndex() * works.getPageSize() + works.getPageSize();
+        if(pageEnd > resultList.size()){
+            pageEnd = resultList.size();
+        }
+        resultList = resultList.subList(pageStarg, pageEnd);
+        returnMap.put("pageSize", works.getPageSize());
+        returnMap.put("pageIndex", works.getPageIndex());
+
+
+        returnMap.put("worksPhotos",resultList);
+        outputData(returnMap);
+
+
+    }
+
 
 
 }

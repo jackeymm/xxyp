@@ -60,7 +60,10 @@ public class FansController extends BaseController{
         }
         fans.setStatus(1);
         int result = fansService.insert(fans);
-        logger.info("createFans result : "+result);
+//        if(result == 0){
+//            fansService.updateByUsers(fans);
+//        }
+//        logger.info("createFans result : "+result);
         outputData();
     }
 
@@ -76,13 +79,14 @@ public class FansController extends BaseController{
     )
     public void updateFans(@RequestBody UpdateFansInput updateFansInput) {
         Fans fans = new Fans();
-        if(null == updateFansInput.getFansId() || updateFansInput.getFansId() <= 0){
+        if(null == updateFansInput.getFromUserId() || updateFansInput.getToUserId() <= 0){
             logger.info("input is null");
             outputData();
         }
-        fans.setFansId(updateFansInput.getFansId());
+        fans.setFromUserId(updateFansInput.getFromUserId());
+        fans.setToUserId(updateFansInput.getToUserId());
         fans.setStatus(0);
-        int result = fansService.updateByPrimaryKey(fans);
+        int result = fansService.deleteFans(fans);
         logger.info("updateFans result : "+result);
         outputData();
     }

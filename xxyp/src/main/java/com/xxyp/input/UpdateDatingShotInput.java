@@ -10,6 +10,8 @@ public class UpdateDatingShotInput implements Serializable{
 
     @ApiModelProperty(required = false,hidden=false, value = "约拍ID")
     private Long datingShotId;
+    @ApiModelProperty(required = false,hidden=false, value = "用户ID")
+    private Long userId;
     @ApiModelProperty(required = false,hidden=false, value = "状态")
     private Integer status;;
     @ApiModelProperty(required = false,hidden=false, value = "约拍地点")
@@ -98,5 +100,13 @@ public class UpdateDatingShotInput implements Serializable{
 
     public void setDatingShotId(Long datingShotId) {
         this.datingShotId = datingShotId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

@@ -8,6 +8,7 @@ public enum CodeMsg {
     ERROR(100000, "error"),
     HEADER_INFO_ERROR(100001, "请求头信息为空"),
     USERID_ERROR(100002, "userID为空"),
+    USERID_WRONG_ERROR(100007, "userID不合法"),
     USERAGENT_ERROR(100003, "useragent为空"),
     TOKEN_ERROR(100004, "token不合法为空"),
     USERAGENT_RESLOVE_ERROR(100005, "useragent不合法"),
@@ -18,6 +19,8 @@ public enum CodeMsg {
     NOTSUPPORTED_SIGN_TYPE(100013, "不支持的签名加密类型"),
     REQUESTBODY_PARSE_ERROR(100025, "请求Body解析失败"),
     UNKNOW(100016, "未知错误"),
+    DATED_ERROR(100018, "已有人接单约拍"),
+    PARAM_ERROR(100019, "请求参数错误"),
     EMPTY(100017, "数据为空");
 
     private int code;

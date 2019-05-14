@@ -7,6 +7,7 @@ import com.xxyp.model.WorksPhoto;
 import com.xxyp.service.IWorksService;
 import com.xxyp.utils.GsonUtil;
 import org.apache.ibatis.annotations.Param;
+import org.apache.shiro.util.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +52,7 @@ public class WorksServiceImpl implements IWorksService {
         WorksExample example = new WorksExample();
         WorksExample.Criteria criteria = example.createCriteria();
         assemblyWorksEqual2Criteria(criteria, works);
+        example.setOrderByClause("works_id desc");
         logger.info("### example : "+ GsonUtil.toJson(example));
         return worksMapper.selectByExample(example);
     }
@@ -102,6 +104,9 @@ public class WorksServiceImpl implements IWorksService {
 
     private void assemblyHotWorksEqual2Criteria(WorksExample.Criteria criteria, List<WorksPhoto> worksPhoto){
         logger.info("assemblyWorksEqual2Criteria -- worksPhoto : "+GsonUtil.toJson(worksPhoto));
+        if(CollectionUtils.isEmpty(worksPhoto)){
+            return;
+        }
         List<Long> workIds = new ArrayList<Long>();
         for (int i = 0; i < worksPhoto.size(); i++){
             if(i>20)

@@ -202,4 +202,38 @@
     where fans_id = #{fansId,jdbcType=BIGINT}
   </update>
 
+  <update id="updateByUsers" parameterType="com.xxyp.model.Fans">
+    update fans
+    <set>
+      <if test="status != null">
+        status = #{status,jdbcType=TINYINT},
+      </if>
+    </set>
+    <where>
+      <if test="fromUserId != null">
+        and from_user_id = #{fromUserId,jdbcType=BIGINT}
+      </if>
+      <if test="toUserId != null">
+       and to_user_id = #{toUserId,jdbcType=BIGINT}
+      </if>
+    </where>
+  </update>
+
+  <update id="deleteFans" parameterType="com.xxyp.model.Fans">
+    update fans
+    <set>
+      <if test="status != null">
+        status = #{status,jdbcType=TINYINT},
+      </if>
+    </set>
+    <where>
+      <if test="fromUserId != null">
+        and from_user_id = #{fromUserId,jdbcType=BIGINT}
+      </if>
+      <if test="toUserId != null">
+        and to_user_id = #{toUserId,jdbcType=BIGINT}
+      </if>
+    </where>
+  </update>
+
 </mapper>

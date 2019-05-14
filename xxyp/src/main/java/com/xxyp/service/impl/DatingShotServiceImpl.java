@@ -38,8 +38,14 @@ public class DatingShotServiceImpl implements IDatingShotService {
         DatingShotExample example = new DatingShotExample();
         DatingShotExample.Criteria criteria = example.createCriteria();
         assemblyDatingShotEqual2Criteria(criteria, datingShot);
+        example.setOrderByClause(" dating_shot_id desc");
+//        example.setLimitByClause("" + datingShot.getPageIndex() * datingShot.getPageSize() + "," + datingShot.getPageSize());
         logger.info("### example : "+ GsonUtil.toJson(example));
         return datingShotMapper.selectByExample(example);
+    }
+
+    public DatingShot selectByPrimaryKey(Long datingShotId) {
+        return datingShotMapper.selectByPrimaryKey(datingShotId);
     }
 
 

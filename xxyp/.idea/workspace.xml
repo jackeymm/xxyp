@@ -7,60 +7,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce9d47c9-1da8-4eba-83c1-48240ea5bde2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitingore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitingore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/xxyp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/xxyp_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/dao/FansMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/dao/FansMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/input/GetUserInfoInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/GetUserInfoInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateDatingShotInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateDatingShotInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateFansInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateFansInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotPhoto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotPhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotPhotoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OurRealmImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OurRealmImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IDatingShotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IDatingShotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FansMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FansMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/cache/CacheConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/cache/CacheConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/cache/CacheManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/cache/CacheManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/LikesAndFollowsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/LikesAndFollowsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/common/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/common/CodeMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/DatingShotController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/DatingShotController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/FansController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/FansController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/HotWorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/HotWorksController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/UserInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/controller/WorksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/dao/FansMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/dao/FansMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/input/CreateUserInfoInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/input/CreateUserInfoInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/input/GetUserInfoInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/input/GetUserInfoInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/input/UpdateDatingShotInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/input/UpdateDatingShotInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/input/UpdateFansInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/input/UpdateFansInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotPhoto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/DatingShotPhoto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/DatingShotPhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/DatingShotPhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/OurRealmImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/OurRealmImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/model/Works.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/model/Works.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/IDatingShotService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/IDatingShotService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/IFansService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/IFansService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/DatingShotServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/DatingShotServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/FansServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/FansServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/WorksPhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/WorksPhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/utils/ShiroUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/utils/ShiroUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/WorksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xxyp/service/impl/WorksServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DatingShotMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DatingShotMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/FansMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/FansMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/cache/CacheConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/cache/CacheConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/cache/CacheManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/cache/CacheManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/LikesAndFollowsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/LikesAndFollowsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/common/CodeMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/DatingShotController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/DatingShotController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/FansController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/FansController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/HotWorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/HotWorksController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/UserInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/WorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/controller/WorksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/FansMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/dao/FansMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/CreateUserInfoInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/CreateUserInfoInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/GetUserInfoInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/GetUserInfoInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/UpdateDatingShotInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/UpdateDatingShotInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/UpdateFansInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/input/UpdateFansInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample$Criteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample$Criterion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample$GeneratedCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotPhoto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/DatingShotPhoto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/UserInfoExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/DatingShotPhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/DatingShotPhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/OurRealmImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/OurRealmImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/Works.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/model/Works.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IDatingShotService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IDatingShotService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IFansService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/IFansService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/DatingShotServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/DatingShotServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/FansServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/FansServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/WorksPhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/WorksPhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/ShiroUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/utils/ShiroUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/WorksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/com/xxyp/service/impl/WorksServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/DatingShotMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/DatingShotMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/FansMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/FansMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xxyp/WEB-INF/classes/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxyp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xxyp.iml" afterDir="false" />
     </list>
     <ignored path="xxyp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,47 +128,53 @@
     <session id="1776984137">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="33" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="5" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="9" />
-          <entry key="java" value="64" />
-          <entry key="properties" value="1" />
-          <entry key="xml" value="9" />
+          <entry key="class" value="11" />
+          <entry key="java" value="136" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="64" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="9" />
+          <entry key="CLASS" value="11" />
+          <entry key="JAVA" value="136" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="463" />
-          <entry key="xml" value="17" />
+          <entry key="java" value="2431" />
+          <entry key="properties" value="12" />
+          <entry key="xml" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="463" />
-          <entry key="SQL" value="3" />
-          <entry key="XML" value="14" />
+          <entry key="JAVA" value="2431" />
+          <entry key="Properties" value="12" />
+          <entry key="SQL" value="29" />
+          <entry key="XML" value="258" />
         </counts>
       </usages-collector>
     </session>
@@ -145,95 +185,103 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
-              <caret line="59" column="74" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1097">
-              <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="81">
+              <caret line="108" column="100" selection-start-line="108" selection-start-column="100" selection-end-line="108" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetDatingShotInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1034#1035#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+            <state relative-caret-position="60">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IUserInfoService.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/xxyp/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="300">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2518">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="4485">
+              <caret line="299" column="10" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+            <state relative-caret-position="510">
+              <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
               <folding>
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
+                <element signature="e#1838#1839#0" expanded="true" />
+                <element signature="e#2408#2409#0" expanded="true" />
+                <element signature="e#2472#2473#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateFansInput.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/UserInfoMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateFansInput.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IDatingShotService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -250,17 +298,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BaseResultMap</find>
-      <find>distinct</find>
-      <find>Base_Column_List</find>
-      <find>copyProperties</find>
-      <find>updateByPrimaryKey</find>
-      <find>login</find>
-      <find>doCredentialsMatch</find>
-      <find>cacheRefeshTime</find>
-      <find>orderbyclause</find>
-      <find>selectByExample</find>
       <find>by</find>
+      <find>works_id</find>
+      <find>works_image_like_count</find>
+      <find>getHotWorks</find>
+      <find>Example_Where_Clause</find>
+      <find>hotWorkPhotos</find>
+      <find>&quot;update</find>
+      <find>X-XXYP-User-ID</find>
+      <find>X_XXYP_USER_ID</find>
+      <find>user_id</find>
+      <find>works_id desc</find>
+      <find>DatingShotController</find>
+      <find>outputData</find>
+      <find>setOrderByClause</find>
+      <find>da</find>
+      <find>oredCriteria</find>
+      <find>jdbc.url</find>
+      <find>updateByPrimaryKeySelective</find>
+      <find>xxyp.works_photo</find>
+      <find>100001</find>
+      <find>USERID_ERROR</find>
+      <find>BaseResultMap</find>
+      <find>Base_Column_List</find>
+      <find>selectByPrimaryKey</find>
+      <find>Idatingshot</find>
+      <find>DatingShotResultMap</find>
+      <find>update</find>
+      <find>updateByPrimaryKey</find>
+      <find>selectByExample</find>
+      <find>updatedatingshot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -270,29 +337,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/ContentType.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/IShardingStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisHashNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/BinaryRedisImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/ObjectRedis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisRangeNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/NamedThreadFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClientPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/redis/RedisClientPoolFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/SerializeUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/TokenEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHeader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/redis.xsd" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/redisConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/UserBaseRequestInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/EntityCache.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/TestCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/ICacheManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheManagerImpl.java" />
@@ -301,26 +345,49 @@
         <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-shiro.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/Likes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/LikesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserFans.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/GetUserInfoInput.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OurRealmImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/DatingShotPhotoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotPhotoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/GetUserFansInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateFansInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/PageEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotPhoto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotPhotoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/GetDatingShotPhotoInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/dao/FansMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FansMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateDatingShotInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/service/IDatingShotService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xxyp/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java" />
       </list>
     </option>
   </component>
@@ -483,6 +550,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -525,11 +593,46 @@
               <item name="xxyp" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="xxyp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxyp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xxyp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxyp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xxyp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxyp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xxyp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxyp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xxyp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xxyp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -554,10 +657,10 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="xxyp" />
-    <property name="SearchEverywhereHistoryKey" value="userinfo.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/UserInfoMapper.xml&#10;datingshot.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/DatingShotPhotoMapper.xml&#10;ou&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/OurRealmImpl.java&#10;login&#9;PSI&#9;JAVA://com.xxyp.controller.LoginController&#10;FansServiceImpl&#9;PSI&#9;JAVA://com.xxyp.service.impl.FansServiceImpl&#10;applicationContext-dao.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/config/spring/applicationContext-dao.xml&#10;works&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/Works.java&#10;userinfoc&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/controller/UserInfoController.java&#10;BaseController&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfoser&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java&#10;baseCon&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfo&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/UserInfo.java&#10;swa&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/SwaggerConfig.java&#10;web&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/web/WEB-INF/web.xml&#10;UserInfoMapper&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/dao/UserInfoMapper.java" />
+    <property name="SearchEverywhereHistoryKey" value="dating.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/DatingShotMapper.xml&#10;userinfo.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/UserInfoMapper.xml&#10;dat.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/DatingShotMapper.xml&#10;fans.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/FansMapper.xml&#10;datingshot.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/DatingShotMapper.xml&#10;works.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/WorksMapper.xml&#10;fansm&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/dao/FansMapper.java&#10;fansxml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/mapper/FansMapper.xml&#10;ou&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/OurRealmImpl.java&#10;login&#9;PSI&#9;JAVA://com.xxyp.controller.LoginController&#10;FansServiceImpl&#9;PSI&#9;JAVA://com.xxyp.service.impl.FansServiceImpl&#10;applicationContext-dao.xml&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/resources/config/spring/applicationContext-dao.xml&#10;works&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/Works.java&#10;userinfoc&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/controller/UserInfoController.java&#10;BaseController&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfoser&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java&#10;baseCon&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/BaseController.java&#10;userinfo&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/model/UserInfo.java&#10;swa&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/common/SwaggerConfig.java&#10;web&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/web/WEB-INF/web.xml&#10;UserInfoMapper&#9;FILE&#9;file:///Users/jackeymm/work/Idea/yp/xxyp/src/main/java/com/xxyp/dao/UserInfoMapper.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547778395888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551428935195" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -566,11 +669,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xxyp.input" />
       <recent name="com.xxyp.model" />
       <recent name="com.xxyp.common" />
       <recent name="com.xxyp.redis" />
       <recent name="com.xxyp.utils" />
-      <recent name="com.xxyp.output" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -685,6 +788,20 @@
     </configuration>
     <configuration name="KeyGenNew" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xxyp.test.KeyGenNew" />
+      <module name="xxyp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xxyp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xxyp.test.Test" />
       <module name="xxyp" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -916,9 +1033,11 @@
       <item itemvalue="Tomcat Server.xxyp" />
       <item itemvalue="JUnit.TestCache.testCacheManager" />
       <item itemvalue="JUnit.TestCache" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.TestCache.testCacheManager" />
         <item itemvalue="JUnit.TestCache" />
       </list>
@@ -1008,7 +1127,22 @@
       <workItem from="1547520037961" duration="120000" />
       <workItem from="1547521388176" duration="1267000" />
       <workItem from="1547724375892" duration="4813000" />
-      <workItem from="1547778427105" duration="1022000" />
+      <workItem from="1547778427105" duration="1218000" />
+      <workItem from="1547810556249" duration="523000" />
+      <workItem from="1548066922558" duration="166000" />
+      <workItem from="1548158137156" duration="5214000" />
+      <workItem from="1548294795884" duration="587000" />
+      <workItem from="1548295412095" duration="678000" />
+      <workItem from="1548382603056" duration="3387000" />
+      <workItem from="1548407379859" duration="647000" />
+      <workItem from="1548656288354" duration="14362000" />
+      <workItem from="1548841502588" duration="2447000" />
+      <workItem from="1548981958446" duration="4588000" />
+      <workItem from="1549269781152" duration="1714000" />
+      <workItem from="1549846816838" duration="10636000" />
+      <workItem from="1550285407518" duration="1393000" />
+      <workItem from="1551315077430" duration="3430000" />
+      <workItem from="1556250827339" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="build frame&#10;add saveUser">
       <created>1489602579933</created>
@@ -1053,32 +1187,33 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265556000" />
+    <option name="totallyTimeSpent" value="315853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33279485" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3117932" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32885906" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3257329" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49353796" weight="0.47516558" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.40728477" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4927302" weight="0.51986754" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.40863788" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50646204" side_tool="true" weight="0.5246711" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32396695" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5072698" side_tool="true" weight="0.47516558" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3228477" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32928678" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3410596" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3410596" />
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="bottom" id="CheckStyle" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
@@ -1096,7 +1231,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33279485" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3117932" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -1107,12 +1242,12 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3257329" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49353796" weight="0.47516558" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.40728477" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.4927302" visible="true" weight="0.51986754" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.40863788" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50646204" side_tool="true" weight="0.5246711" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32396695" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5072698" side_tool="true" weight="0.47516558" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3228477" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32928678" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32894737" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3410596" />
@@ -1157,21 +1292,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
           <line>62</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java</url>
@@ -1187,37 +1310,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
-          <line>68</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
-          <line>74</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
-          <line>93</line>
+          <line>90</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
-          <line>94</line>
+          <line>91</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -1239,6 +1350,42 @@
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotPhotoController.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1247,327 +1394,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfoExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/TokenEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="178" column="16" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/SecurityUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/authc/UsernamePasswordToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/SecurityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/UsernamePasswordToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/AbstractAuthenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/org/apache/shiro/realm/AuthenticatingRealm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="214" column="19" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/credential/PasswordMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/credential/CredentialsMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/org/apache/shiro/web/mgt/DefaultWebSecurityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar!/sun/security/util/MemoryCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/EntityCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar!/sun/security/util/Cache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/ShiroUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/OurRealmImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/realm/AuthenticatingRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8235">
-          <caret line="594" selection-start-line="594" selection-end-line="594" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/utils/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/ICacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/cache/CacheManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/DatingShotPhotoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotPhoto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotPhotoExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotPhotoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DatingShotPhotoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="135" column="71" selection-start-line="135" selection-start-column="71" selection-end-line="135" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/ILikesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="302">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetUserInfoInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserFans.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateUserInfoInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="420">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetUserFansInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/CreateDatingShotInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/FansExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="245" column="41" selection-start-line="245" selection-start-column="14" selection-end-line="245" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="72" column="15" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
-          <folding>
-            <element signature="e#2408#2409#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/UserInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateFansInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1578,63 +1429,340 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateFansInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/RequestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="52" column="54" lean-forward="true" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/WorksMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/WorksPhotoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DatingShotPhotoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Likes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserFans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/TokenEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="76" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/PageEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetDatingShotPhotoInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotPhoto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/DatingShotExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksPhoto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/WorksExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotPhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="88" column="30" selection-start-line="77" selection-start-column="7" selection-end-line="88" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Works.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/WorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="168" column="70" selection-start-line="168" selection-start-column="70" selection-end-line="168" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IFansService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/WorksPhotoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/FansMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/FansServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-          <folding>
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FansMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="216" column="51" selection-start-line="216" selection-start-column="51" selection-end-line="216" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/model/Fans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/UpdateDatingShotInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/FansController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="259">
+          <caret line="114" column="58" selection-start-line="114" selection-start-column="58" selection-end-line="114" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1097">
-          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+        <state relative-caret-position="191">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/HotWorksController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/DatingShotMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2518">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="103">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LikesAndFollowsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+        <state relative-caret-position="154">
+          <caret line="97" column="45" lean-forward="true" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/LoginController.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="59" column="74" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
+        <state relative-caret-position="1800">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IUserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="300">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/UserInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/controller/DatingShotController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        <state relative-caret-position="81">
+          <caret line="108" column="100" selection-start-line="108" selection-start-column="100" selection-end-line="108" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/input/GetDatingShotInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/common/CodeMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/DatingShotServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xxyp/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DatingShotMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4485">
+          <caret line="299" column="10" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/impl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+          <folding>
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1838#1839#0" expanded="true" />
+            <element signature="e#2408#2409#0" expanded="true" />
+            <element signature="e#2472#2473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/dao/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxyp/service/IDatingShotService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>

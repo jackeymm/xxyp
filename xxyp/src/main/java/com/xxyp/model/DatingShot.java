@@ -2,7 +2,7 @@ package com.xxyp.model;
 
 import java.util.List;
 
-public class DatingShot {
+public class DatingShot extends PageEntity{
     private Long datingShotId;
 
     private Long userId;
